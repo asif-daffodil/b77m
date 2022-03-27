@@ -1,0 +1,29 @@
+front-end development (web design)
+html
+css
+bootstrap
+JavaScript
+jQuery
+
+React
+
+java - oracle/mysql server
+
+php
+oop
+MySQLi
+Laravel
+WordPress
+
+SEO - Search Engine Optimaizaion
+key word
+link submit to search engine
+lite website
+unique content
+bounce rate
+traffic
+place
+backlink (social, free blog/forum/news, paid blog/forum/news, govt/educational)
+
+<b>Dhaka</b>
+<i>Bogura</i>
