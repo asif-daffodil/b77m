@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+   
+}
+header {
+    background-color: red;
+    color:white;
+    width:100%;
+    padding: 5px;
+}
+header h1{
+    margin-left: 270px;
+    margin-top: 6px;
+}
+
+header h3{
+    margin-left: 640px;
+    margin-top: -10px;
+}
+
+aside {
+    float: left;
+    width:30%;
+    height: 520px;
+    background-color: green;
+    color:white;
+    padding:20px;
+    padding-left: 30px;
+}
+aside li a{
+    color:white;
+    list-style-type: square;
+    text-decoration:underline;
+    margin-bottom: 15px;
+    font-size: 29px;
+}
+aside li a:link{
+    color:white;
+}
+
+aside li a:hover{
+    color:aqua;
+    text-decoration:none;
+    
+}
+aside li{
+    margin-bottom: 15px;
+}
+aside li:hover{
+    list-style-type:none;
+}
+article {
+    float:right;
+    width:70%;
+    height: 520px;
+    background-color: black;
+    color:wheat;
+    text-align: center;
+    padding: 30px;
+   
+}
+article h1 {
+    font-size: 30px;
+}
+article p{
+    font-size: 24px;
+}
+.article {
+    margin-top: 50px;
+    width:600px;
+    margin:auto;
+}
+.article div h1 {
+    border:1px dotted wheat;
+    padding: 1px;
+    margin-bottom: 8px;
+    margin-top: 5px;
+}
+footer {
+    height: 53px;
+    position: absolute;
+    background-color: chartreuse;
+    color:black;
+    margin-top: 520px;
+    width:100%;
+    padding: 16px;
+    text-align: center;
+    font-size: 30px;
+}
+footer p{
+    margin-top: -3px;
+}
+   
