@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.divvai {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-height: 65vh;
+  background-color: #111;
+}
+.maindiv {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.maindiv .div {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: -30px;
+  border: 4px solid transparent;
+  border-top: 4px solid #23ecff;
+}
+.maindiv .div:nth-child(1) {
+  animation-name: animate1;
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+  animation-direction: reverse;
+}
+@keyframes animate1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.maindiv .div:nth-child(3) {
+  animation-name: animate;
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+  animation-direction: reverse;
+}
+@keyframes animate2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.maindiv .div:nth-child(2) {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: -30px;
+  border: 4px solid transparent;
+  border-right: 4px solid #23ecff;
+  animation-name: animate;
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+  animation-direction: normal;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.maindiv .div:nth-child(3) {
+  position: absolute;
+  top: -66.66px;
+}
+.maindiv p {
+  position: absolute;
+  color: #fff;
+  font-size: 1.9em;
+  bottom: -110px;
+}
+.maindiv .div::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #23ecff;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  border-radius: 50%;
+}
+.maindiv .div:nth-child(3)::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #23ecff;
+  position: absolute;
+  top: 12px;
+  left: 116px;
+  border-radius: 50%;
+}
+.maindiv .div:nth-child(2)::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #23ecff;
+  position: absolute;
+  top: 12px;
+  left: 113px;
+  border-radius: 50%;
+}
+.maindiv .div:nth-child(1)::before {
+  box-shadow: 0 0 15px #23ecff32, 0 0 25px chartreuse, 0 0 35px chartreuse,
+    0 0 35px #23ecff, 0 0 50px #23ecff, 0 0 75px #23ecff;
+}
+.maindiv .div:nth-child(2)::before {
+  box-shadow: 0 0 15px #23ecff32, 0 0 25px chartreuse, 0 0 35px chartreuse,
+    0 0 35px #23ecff, 0 0 50px #23ecff, 0 0 75px #23ecff;
+}
+.maindiv .div:nth-child(3)::before {
+  box-shadow: 0 0 15px #23ecff32, 0 0 25px chartreuse, 0 0 35px chartreuse,
+    0 0 35px #23ecff, 0 0 50px #23ecff, 0 0 75px #23ecff;
+}
+
+.ulol {
+  width: 500px;
+  margin-left: 100px;
+}
+
+.animation {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("./sky.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+.animation1 {
+  height: 170px;
+  width: 500%;
+  display: block;
+  background-image: url("./highway.jpg");
+  background-repeat: repeat-x;
+  animation-name: runhighway;
+  background-position: center;
+  background-size: 12%;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
+}
+@keyframes runhighway {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-3400px);
+  }
+}
+.animation2 {
+  height: 170px;
+  width: 500%;
+  display: block;
+  background-image: url("city.png");
+  background-repeat: repeat-x;
+  animation-name: city;
+  background-position: center;
+  background-size: 12%;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  bottom: 147px;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+@keyframes city {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-1500px);
+  }
+}
+
+.car {
+  position: absolute;
+  width: 400px;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 30px;
+  z-index: 3;
+}
+
+.car img {
+  width: 400px;
+  animation: car 1s linear infinite;
+}
+@keyframes car {
+  100% {
+    transform: translate(-1px);
+  }
+  50% {
+    transform: translate(1px);
+  }
+  0% {
+    transform: translate(-1px);
+  }
+}
+.wheel {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 30px;
+  z-index: 3;
+}
+.wheel img {
+  width: 62px;
+  height: 62px;
+  animation: wheel 1s linear infinite;
+}
+.front-wheel {
+  margin-left: 179px;
+}
+.back-wheel {
+  margin-left: -30px;
+}
+@keyframes wheel {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
