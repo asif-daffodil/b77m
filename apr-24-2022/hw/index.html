@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nahida Akter</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      @media only Screen and (max-width: 720px) {
+        .row {
+          width: 100%;
+        }
+      }
+
+      .container {
+        width: 100%;
+        min-height: 100vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        background: -webkit-gradient(
+          linear,
+          left bottom,
+          right top,
+          from(cornflowerblue),
+          color-stop(#fff),
+          to(cornflowerblue)
+        );
+        background: linear-gradient(
+          to top right,
+          cornflowerblue,
+          #fff,
+          cornflowerblue
+        );
+      }
+
+      .container > .row {
+        width: 600px;
+        margin: auto;
+        border-radius: 6px;
+        -webkit-box-shadow: 0 0 10px #000, 0 0 10px #000 inset;
+        box-shadow: 0 0 10px #000, 0 0 10px #000 inset;
+        padding: 16px;
+        background: rgba(255, 255, 255, 0.7);
+      }
+
+      .container > .row h1 {
+        margin-bottom: 20px;
+        color: darkblue;
+      }
+
+      .container > .row > form > table {
+        width: 100%;
+      }
+
+      .container > .row > form > table > tbody > tr:hover {
+        background: lightblue !important;
+      }
+
+      .container > .row > form > table > tbody > tr:nth-child(odd) {
+        background: #d3d3d3;
+      }
+
+      .container > .row > form > table > tbody > tr > td {
+        padding: 8px;
+      }
+
+      .container > .row > form > table > tbody > tr > td > textarea {
+        width: 100%;
+        resize: none;
+        padding: 8px;
+        border: 1px solid #ccc;
+      }
+
+      .container > .row > form > table > tbody > tr > td > textarea:focus {
+        -webkit-box-shadow: 3px 3px 3px #000;
+        box-shadow: 3px 3px 3px #000;
+        outline: none;
+      }
+
+      .container
+        > .row
+        > form
+        > table
+        > tbody
+        > tr
+        > td
+        > input:not([type="submit"]):not([type="file"]) {
+        width: 100%;
+        padding: 8px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+      }
+
+      .container
+        > .row
+        > form
+        > table
+        > tbody
+        > tr
+        > td
+        > input:not([type="submit"]):not([type="file"]):focus {
+        -webkit-box-shadow: 3px 3px 3px #000;
+        box-shadow: 3px 3px 3px #000;
+        outline: none;
+      }
+
+      .container > .row > form > table > tbody > tr > td > label {
+        margin-right: 12px;
+        color: darkblue;
+      }
+
+      .container > .row > form > table > tbody > tr > td > label > span {
+        color: red;
+      }
+
+      .container
+        > .row
+        > form
+        > table
+        > tbody
+        > tr
+        > td
+        > input[type="submit"] {
+        padding: 8px 24px;
+        border-radius: 6px;
+        border: none;
+        -webkit-box-shadow: 3px 3px 3px #000;
+        box-shadow: 3px 3px 3px #000;
+        cursor: pointer;
+      }
+
+      .container
+        > .row
+        > form
+        > table
+        > tbody
+        > tr
+        > td
+        > input[type="submit"]:hover {
+        background: darkblue;
+        color: #fff;
+      }
+
+      .container > .row > form > table > tbody > tr > td > select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1>Sign-up Form</h1>
+        <form>
+          <table cellspacing="0">
+            <tr>
+              <td>
+                <label for="name"> Your Name <span>*</span> </label>
+              </td>
+              <td>:</td>
+              <td>
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  id="name"
+                  autocomplete="off"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="email"> Your Email <span>*</span> </label>
+              </td>
+              <td>:</td>
+              <td>
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  id="email"
+                  autocomplete="off"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label> Your Gender <span>*</span> </label>
+              </td>
+              <td>:</td>
+              <td>
+                <label for="male">
+                  <input type="radio" name="gender" id="male" required />Male
+                </label>
+                <label for="female">
+                  <input
+                    type="radio"
+                    name="gender"
+                    id="female"
+                    required
+                  />Female
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="country">Country <span>*</span></label>
+              </td>
+              <td>:</td>
+              <td>
+                <select id="country" required>
+                  <option value="">--Select Country--</option>
+                  <option value="Bangladesh">Bangladesh</option>
+                  <option value="India">India</option>
+                  <option value="Pakistan">Pakistan</option>
+                  <option value="USA">USA</option>
+                  <option value="UK">UK</option>
+                  <option value="Rasia">Rasia</option>
+                  <option value="Others">Others</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label> Your Skills </label>
+              </td>
+              <td>:</td>
+              <td>
+                <label for="html">
+                  <input type="checkbox" name="grnder" id="html" />HTML
+                </label>
+                <label for="css">
+                  <input type="checkbox" name="grnder" id="css" />CSS
+                </label>
+                <label for="bs">
+                  <input type="checkbox" name="grnder" id="bs" />Bootstrap
+                </label>
+                <label for="js">
+                  <input type="checkbox" name="grnder" id="js" />JavaScript
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="pass"> Your Password <span>*</span> </label>
+              </td>
+              <td>:</td>
+              <td>
+                <input
+                  type="password"
+                  placeholder="Your Password"
+                  id="pass"
+                  autocomplete="off"
+                  required
+                  minlength="6"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="address"> Your Address <span>*</span> </label>
+              </td>
+              <td>:</td>
+              <td>
+                <textarea
+                  id="address"
+                  rows="5"
+                  placeholder="Your Address"
+                  autocomplete="off"
+                  required
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="pic"> Upload Image <span>*</span> </label>
+              </td>
+              <td>:</td>
+              <td><input type="file" id="pic" required /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td><input type="submit" value="Sign up" /></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
