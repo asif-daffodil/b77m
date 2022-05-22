@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.norshindi {
+  width: 300px;
+  height: 200px;
+  background: rgb(14, 121, 37);
+  margin: 20px auto 40px;
+  display: flex;
+  border: 1px solid #000;
+  position: relative;
+}
+
+.norshindi::before {
+  content: "Bangladesh";
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  line-height: 24px;
+  bottom: -24px;
+}
+
+.norshindi:hover::before {
+  content: "Japan";
+}
+
+.norshindi:hover {
+  background: #fff;
+}
+
+.college {
+  width: 150px;
+  height: 150px;
+  background: rgba(255, 0, 0, 1);
+  margin: auto;
+  border-radius: 50%;
+}
+
+.bd {
+  width: 300px;
+  height: 200px;
+  margin: 20px auto;
+  display: flex;
+  background: #00684d;
+}
+
+.dhk {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: auto;
+  background-image: url("../images/pm.png");
+  background-color: #e72d41;
+  background-size: cover;
+}
+
+.borishal {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  /* background-image: url("../images/messi.webp");
+  background-color: #ccc;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 500px; */
+  background: url("../images/messi.webp") no-repeat bottom right / 500px,
+    radial-gradient(#fff, #000);
+}
+
+.jhalokathi {
+  width: 300px;
+  height: 200px;
+  margin: auto;
+  background: linear-gradient(to top right, #008f00, #00b900, #008f00);
+  display: flex;
+}
+
+.delduar {
+  width: 250px;
+  height: 160px;
+  margin: auto;
+  background: #ff7300;
+  display: flex;
+  clip-path: polygon(0% 50%, 50% 0, 100% 50%, 50% 100%);
+}
+
+.delduarSchool {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(#000, #00f);
+  margin: auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.shoytan {
+  width: 250px;
+  height: 250px;
+  border: 10px solid #fff;
+  border-radius: 50%;
+  margin-top: 40px;
+  margin-left: -100px;
+}
+
+.bogura {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.hero {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  background: url("../images/hero.jpg");
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  width: 150px;
+  height: 150px;
+  background: url("../images/dighi.jpg") center / cover;
+  position: absolute;
+  top: -75px;
+  left: -75px;
+  transition: 1s;
+}
+
+.hero::after {
+  content: "";
+  width: 150px;
+  height: 150px;
+  background: url("../images/pori.jpg") center / cover;
+  position: absolute;
+  bottom: -75px;
+  right: -75px;
+  transition: 1s;
+}
+
+.hero:hover::before {
+  top: 225px;
+  left: 225px;
+}
+
+.hero:hover::after {
+  bottom: 225px;
+  right: 225px;
+}
+
+.dhaka {
+  width: calc(100% - 100px);
+  text-align: center;
+  font-size: calc(22px + 1vw);
+  text-transform: uppercase;
+  padding: 20px;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  font-style: italic;
+  font-family: Arial;
+  text-shadow: 1px 1px 1px #ccc;
+  margin: 150px auto;
+  background: linear-gradient(#ffffff4d, #ffffff4d),
+    url("../images/bangladesh.jpg") fixed center / cover;
+  /* background-attachment: fixed; */
+  /* opacity: 0.5; */
+}
+.dhaka::before {
+  content: attr(bContent);
+}
+
+.dhaka:hover::before {
+  content: attr(cContent);
+}

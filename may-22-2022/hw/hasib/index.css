@@ -1,0 +1,37 @@
+.p-content{
+    color: wheat;
+    border: 2px solid red;
+    background-color: black;
+    padding: 25px;
+    outline:6px dotted green;
+    outline-offset: 20px;
+    border-radius: 28px;
+    font-size: 30px;
+    text-indent: 50px;
+    letter-spacing: 4px;
+    border-top: 8px dotted yellowgreen;
+    margin-top: 150px;
+    width: 1000px;
+    margin-left: 100px;
+    font-weight: bold;
+}
+
+.div1{
+    width: 200px;
+    display: inline;
+    border: 4px double black;
+    color: hotpink;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 15px;
+
+}
+.div2{
+    width: 200px;
+    display: inline-block;
+    border: 4px double black;
+    color: hotpink;
+    padding: 10px;
+    margin: 20px;
+    
+}

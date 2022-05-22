@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header{
+    margin:0 auto 20px;
+    padding: 15px;
+    box-shadow: -2px 0px 10px #00000031;
+    text-align: center;
+}
+
+h1{
+    margin: 0px auto;
+    color: rgb(0, 0, 0);
+ 
+}
+
+span{
+    margin-left: -8px;
+    font-weight: bolder;
+}
+
+.ab{
+    color: #4285F4 ;
+}
+
+.ac{
+    color: #DB4437;
+}
+
+.ad{
+    color: #F4B400;;
+}
+
+.ae{
+  
+    color: #4285F4;
+}
+
+.af{
+    color: #0F9D58;
+}
+
+.a, .c{
+    margin: 25px auto 0 140px;
+    width: 35%;
+    border-top: 5px solid #4285F4;
+    border-left: 5px solid #DB4437;
+    border-bottom: 5px solid #F4B400;
+    border-right: 5px solid #0F9D58;
+    padding: 20px;
+    box-shadow: 0 2px 4px #f4b30081 , 2px 0 4px #0f9d585d, -2px 0 4px #db453749, 0 -2px 4px #4286f436;
+    display: inline-block;
+}
+
+.b, .d{
+    margin: 20px auto 0 80px;
+    width: 35%;
+    border-top: 5px solid #4285F4;
+    border-left: 5px solid #DB4437;
+    border-bottom: 5px solid #F4B400;
+    border-right: 5px solid #0F9D58;
+    padding: 20px;
+    box-shadow: 0 2px 2px #f4b30081 , 2px 0 2px #0f9d585d, -2px 0 2px #db453749, 0 -2px 2px #4286f436;
+    display: inline-block;
+}
+h2{
+    margin: 10px 0;
+}
+
+.credit{
+    font-weight: bolder;
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+}

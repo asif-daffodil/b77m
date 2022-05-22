@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.x {
+  font-style: normal;
+  font-weight: 550;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  letter-spacing: 1.5px;
+  word-spacing: 3px;
+  width: 500px;
+  height: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background: rgb(23, 24, 24);
+}
+
+.x {
+  border-left-width: 10px;
+  border-left-style: solid;
+  border-left-color: rgb(26, 218, 106);
+  border-right: 10px solid rgb(26, 218, 106);
+  border-radius: 15px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  margin: 50px auto;
+}
