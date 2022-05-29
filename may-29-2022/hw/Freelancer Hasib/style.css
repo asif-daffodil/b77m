@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+      /* This design for Germany */
+.khulna{
+    width: 400px;
+    height: 250px;
+    background: green;
+    margin:auto;
+    margin-top: 50px;
+}
+.jeshore{
+    width: 100%;
+    height: calc(250px / 3)  ;
+    background: #000000;
+}
+.bagerhat{
+        width: 100%;
+        height: calc(250px / 3)  ;
+        background: #D60000;
+}
+.magura{
+    width: 100%;
+    height: calc(250px / 3)  ;
+    background: #FFCF00;
+}
+.khulna h2{
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* This design for argentina Flag */
+
+.argentina{
+    width: 400px;
+    height: 250px;
+    background: green;
+    margin:auto;
+    margin-top: 80px;
+}
+.argentina-jeshore{
+    width: 100%;
+    height: calc(250px / 3)  ;
+    background: #68A7DD;
+}
+.argentina-bagerhat{
+        width: 100%;
+        height: calc(250px / 3)  ;
+        background: #F7F7F7;
+}
+.argentina-magura{
+    width: 100%;
+    height: calc(250px / 3)  ;
+    background: #68A7DD;
+}
+.argentina h2{
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+/* This design for italy Flag  */
+.italy{
+    width: 402px;
+    height: 250px;
+    background: green;
+    margin:auto;
+    margin-top: 80px;
+    position: relative;
+}
+.italy-jeshore{
+    width: 134px;
+    height: 250px;
+    background-color: #008D44;
+    position: absolute;
+}
+.italy-bagerhat{
+    width: 134px;
+    height: 250px;
+    background-color: #F7F7F7;
+    position: absolute;
+    left: 134px;
+}
+.italy-magura{
+    width: 134px;
+    height: 250px;
+    background-color: #C82A35;
+    position: absolute;
+    right: 0;
+}
+/* .italy h2{
+    position: absolute;
+    bottom: -35px;
+    left: 190px;
+} */
+
+.italy::before{
+    content: "This is Italy's Flag";
+    position: absolute;
+    top: 255px;
+    font-size: 25px;
+    width: 100%;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+
+}
+.italy:hover .italy-jeshore{
+    background:#002550 ;
+}
+.italy:hover::before{
+    content: "This is Frances's Flag";
+    position: absolute;
+    top: 255px;
+    font-size: 25px;
+    width: 100%;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+}
+/* This design for France flag */
+.france::before{
+    content: "This is Frances's Flag";
+    position: absolute;
+    top: 255px;
+    font-size: 25px;
+    width: 100%;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+
+}
+.france:hover .france-jeshore{
+    background:#008D44 ;
+}
+.france:hover::before{
+    content: "This is Italy's Flag";
+    position: absolute;
+    top: 255px;
+    font-size: 25px;
+    width: 100%;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+}
+
+.france{
+    width: 402px;
+    height: 250px;
+    background: green;
+    margin:auto;
+    margin-top: 80px;
+    position: relative;
+}
+.france-jeshore{
+    width: 134px;
+    height: 250px;
+    background-color: #002550;
+    position: absolute;
+}
+.france-bagerhat{
+    width: 134px;
+    height: 250px;
+    background-color: #F7F7F7;
+    position: absolute;
+    left: 134px;
+}
+.france-magura{
+    width: 134px;
+    height: 250px;
+    background-color: #C81026;
+    position: absolute;
+    right: 0;
+}
+.france h2{
+    position: absolute;
+    bottom: -35px;
+    left: 190px;
+}
+
+
+/* This design for Belgium Flag  */
+
+.belgium{
+    width: 402px;
+    height: 250px;
+    background: green;
+    margin:auto;
+    margin-top: 80px;
+    position: relative;
+}
+.belgium-jeshore{
+    width: 134px;
+    height: 250px;
+    background-color: #1E1510;
+    position: absolute;
+}
+.belgium-bagerhat{
+    width: 134px;
+    height: 250px;
+    background-color: #EFD728;
+    position: absolute;
+    left: 134px;
+}
+.belgium-magura{
+    width: 134px;
+    height: 250px;
+    background-color: #D4001D;
+    position: absolute;
+    right: 0;
+}
+.belgium h2{
+    position: absolute;
+    bottom: -35px;
+    left: 190px;
+}
+
+
+/* This design for Bangladesh Flag  */
+
+.bangladeshi-flag{
+    width: 400px;
+    height: 250px;
+    background: green;
+    margin:  60px auto;
+    display: flex;
+}
+.hasina{
+    width: 170px;
+    height: 170px;
+    background-color: red;
+    background-image: url("/erdogan.png");
+    background-size: cover;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.radial-gradient{
+    width: 100%;
+    height: 100vh;
+    background:url("/messi-removebg-preview.png")  no-repeat center right / 400px, radial-gradient(white, black);
+    display: flex;
+}
+
+.radialdiv{
+    width: 500px;
+    height: 300px;
+    background: linear-gradient(to right top, red,blue, yellow);
+    margin: auto;
+    display: flex;
+}
+.clipdiv{
+    width: 370px;
+    height: 220px;
+    background:radial-gradient(green,rgb(12, 239, 12),rgb(5, 157, 5),rgb(90, 176, 90));
+    margin: auto;
+    display: flex;
+    clip-path:polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.radiusdiv{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: auto;
+
+    background: radial-gradient(white,black);
+    overflow: hidden;
+}
+.radius{
+    width:220px;
+    height: 220px;
+    border: 8px solid #ff0000;
+    border-radius: 50%;
+    margin-top: 34px;
+    margin-left: -96px;
+}
+
+
+.bogura{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: gray;
+}
+.hero{
+    width: 300px;
+    height: 150px;
+    margin:auto;
+    background: url("/honey.jfif") no-repeat;
+    position:relative;
+   
+}
+.hero::before{
+   content: '';
+   width: 200px;
+   height: 120px;
+   position: absolute;
+   background: url("/dighi.jfif")  center center / 100%;
+   left: -200px;
+   top: -120px;
+   transition: 1s;
+}
+.hero::after{
+    content: '';
+    width: 200px;
+    height: 120px;
+    position: absolute;
+    background: url("/mahi.jfif") center center / 100%;
+    left: 287px;
+    top: 148px;
+    transition: 1s;
+}
+  
+ .hero:hover::before{
+    left: 287px;
+    top: 151px;
+ }
+
+ .hero:hover::after{
+    left: -200px;
+    top: -119px;
+}
+
+.dhaka{
+    width: 100%;
+    height: 40vh;
+    padding: 50px;
+    background:url("/naturalimage.jfif") fixed;
+    margin-top: 80px;
+    
+}
+.dhaka::before{
+    content: attr(dhaka);
+    text-align: center;
+    word-spacing: 8px; 
+    letter-spacing: 2px; 
+    font-size: calc(20px + 1vw);  
+    color: white; 
+    text-shadow: 2px 2px 1px rgb(240, 22, 22);
+}
+.dhaka:hover::before{
+    content: attr(myaim);
+}

@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+body{
+    background-image: url("../images/Desktop.jpg");
+}
+
+.container{
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    background: transparent;
+}
+
+.container-2{
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    background: transparent;
+}
+
+.germany{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 9vh auto;
+    background: blue;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.466);
+}
+
+.ger-black{
+    width: 300px;
+    height: 66.66px;
+    background: black;
+}
+.ger-red{
+    width: 300px;
+    height: 66.66px;
+    background: #DD0000;
+}
+.ger-yellow{
+    width: 300px;
+    height: 66.66px;
+    background: #FFCE00;
+}
+
+.germany-text{
+    margin: 30px auto;
+    font-size: 1.3rem;
+}
+
+.argentina{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 9vh auto;
+    background: blue;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.466);
+}
+
+.arg-sky1{
+    width: 300px;
+    height: 66.66px;
+    background: #74ACDF;
+}
+.arg-white{
+    width: 300px;
+    height: 66.66px;
+    background: #FFFFFF;
+    display: flex;
+}
+
+img{
+    width: 50px;
+    margin: auto;
+}
+
+.arg-sky2{
+    width: 300px;
+    height: 66.66px;
+    background: #74ACDF;
+}
+
+.argentina-text{
+    margin: 30px auto;
+    font-size: 1.3rem;
+}
+
+.france{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 8vh auto;
+    background: #002395;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.466);
+    transition: 0.3s;
+
+}
+
+.france:hover{
+    background: #008D44;
+}
+
+.fra-parts{
+    display: flex;
+}
+
+.fra-green{
+    width: 100px;
+    height: 200px;
+    background: transparent;
+
+}
+
+.fra-white{
+    width: 100px;
+    height: 200px;
+    background: #FFFFFF;
+}
+
+.fra-red{
+    width: 100px;
+    height: 200px;
+    background: #C82A35;
+}
+
+.france::before {
+    content: "France";
+    position: absolute;
+    text-align: center;
+    margin: 230px 120px;
+    font-size: 1.3rem;
+  }
+  
+  .france:hover::before {
+    content: "Italy";
+    position: absolute;
+    text-align: center;
+    margin: 230px 130px;
+    font-size: 1.3rem;
+  }
+
+.belgium{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 9vh auto;
+    background: blue;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.466);
+}
+
+.bel-parts{
+    display: flex;
+}
+
+.bel-green{
+    width: 100px;
+    height: 200px;
+    background: #000000;
+}
+.bel-white{
+    width: 100px;
+    height: 200px;
+    background: #F7C603;
+}
+
+.bel-red{
+    width: 100px;
+    height: 200px;
+    background: #BE003C;
+}
+
+.belgium-text{
+    margin: 30px auto;
+    font-size: 1.3rem;
+}
+
+.credit{
+    font-weight: bold;
+    margin-top: -3vh;
+    font-size: 0.8rem;
+    margin-left: 82vw;
+}

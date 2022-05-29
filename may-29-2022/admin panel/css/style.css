@@ -1,0 +1,102 @@
+@font-face {
+  font-family: jorina;
+  src: url("../fonts/Oswald/Oswald-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: porimoni;
+  src: url("../fonts/Caveat/Caveat-VariableFont_wght.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.main > div:first-child {
+  width: 200px;
+  border-right: 1px solid #000;
+  background: #0f0f0f;
+  box-shadow: 6px 0 6px #000;
+}
+
+.main > div:last-child {
+  flex-grow: 1;
+  width: calc(100% - 200px);
+}
+
+.main > div:first-child > ul {
+  list-style: none;
+  margin-top: 30px;
+}
+
+.main > div:first-child > ul > li > a {
+  text-decoration: none;
+  color: #fff;
+  line-height: 40px;
+  display: block;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  font-family: jorina;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 1px #ccc;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+.main > div:first-child > ul > li:hover {
+  background: dodgerblue;
+}
+
+.main > div:last-child > div:first-child {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.main > div:last-child > div:first-child > h2 {
+  text-transform: uppercase;
+  font-family: jorina;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 1px #ccc;
+  font-weight: lighter;
+  font-size: 36px;
+}
+.main > div:last-child > div:first-child > p {
+  text-align: justify;
+  margin: 24px 0;
+  font-family: porimoni;
+  font-size: 22px;
+}
+.main > div:last-child > div:first-child > button {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  border-width: 0;
+  background: linear-gradient(to top right, dodgerblue, cornflowerblue);
+  text-transform: uppercase;
+  font-family: jorina;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 1px #ccc;
+  font-weight: lighter;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 6px;
+  box-shadow: 1px 1px 1px #000;
+  transition: 0.2s;
+}
+
+.main > div:last-child > div:first-child > button:hover {
+  box-shadow: 6px 6px 6px #000;
+}
