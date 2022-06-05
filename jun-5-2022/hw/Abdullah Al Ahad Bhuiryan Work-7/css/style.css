@@ -1,0 +1,109 @@
+@font-face {
+    font-family: bhai;
+    src: url("../fonts/EingrantchMono-Medium.ttf");
+}
+@font-face {
+    font-family: bon;
+    src: url("../fonts/Saridezra.ttf");
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: bhai;
+}
+
+body{
+    background: linear-gradient(to bottom, rgba(0,0,0,1), rgb(51, 6, 6)) bottom;
+    background-size: contain;
+}
+
+.flag{
+    width: 82%;
+    height: 50vh;
+    margin: 50px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flag > div{
+    width: 300px;
+    height: 200px;
+    background: red;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.61);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flag > div:first-child > div{
+    width: 130px;
+    height: 80px;
+    background-color: white;
+} 
+
+.flag > div:first-child > div:nth-child(3), 
+.flag > div:first-child > div:nth-child(4){
+    margin-top: 40px;
+
+}
+
+.flag > div:first-child > p,
+.flag > div:last-child > p{
+    color: white;
+    font-size: 1.5rem;
+    margin: 10px auto;
+}
+
+.flag > div:last-child{
+    background: #FECC00;
+}
+
+.flag > div:last-child > div{
+    width: 170px;
+    height: 80px;
+    background-color: #006AA7;
+} 
+
+
+.flag > div:last-child > div:nth-child(1), 
+.flag > div:last-child > div:nth-child(3){
+    width: 90px;
+
+}
+
+.flag > div:last-child > div:nth-child(3), 
+.flag > div:last-child > div:nth-child(4){
+    margin-top: 40px;
+
+}
+
+.paragraph{
+    width: 80%;
+    height: 42vh;
+    margin: auto;
+    display: flex;
+}
+
+.paragraph p{
+    margin: auto;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.paragraph p:hover{
+    font-family: bon;
+    font-size: 1.1rem;
+    cursor: default;
+}
+
+h3{
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 35vw;    
+}

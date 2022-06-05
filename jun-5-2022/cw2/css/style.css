@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url("../images/cursor.png"), auto;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background: limegreen;
+  display: grid;
+  grid-template-areas:
+    "piller1 piller1 piller2"
+    "piller3 piller4 piller2"
+    "piller3 piller5 piller6";
+  grid-gap: 6px;
+  padding: 6px;
+}
+
+.main > div {
+  background: blue;
+  font: italic small-caps lighter 32px auto arial;
+  color: #fff;
+  text-shadow: 2px 2px 2px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d1 {
+  grid-area: piller1;
+}
+.d2 {
+  grid-area: piller2;
+}
+.d3 {
+  grid-area: piller3;
+}
+.d4 {
+  grid-area: piller4;
+}
+.d5 {
+  grid-area: piller5;
+}
+.d6 {
+  grid-area: piller6;
+}

@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background: dodgerblue;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6px;
+  padding: 6px;
+}
+
+.main > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: lime;
+  border-radius: 6px;
+  font: italic small-caps bolder 32px auto arial;
+  color: #fff;
+  text-shadow: 2px 2px 1px #000;
+  box-shadow: 0 0 10px #000 inset;
+}
+
+.main > div:hover {
+  background: orangered;
+}
