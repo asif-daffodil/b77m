@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.abul,
+.babul,
+.kabul,
+.bulbul {
+  width: 200px;
+  height: 200px;
+  background: cornflowerblue;
+  border-radius: 16px;
+  box-shadow: 0 0 10px #000 inset;
+  margin: 20px;
+  transition: 0.5s;
+}
+
+.babul {
+  background: dodgerblue;
+}
+
+.abul:hover {
+  transform: translateX(30px) translateY(30px);
+}
+
+.babul:hover {
+  transform: rotate(360deg);
+}
+
+.kabul {
+  background: lime;
+  animation: kabul 1s infinite linear;
+}
+
+@keyframes kabul {
+  0% {
+    transform: skew(-10deg, -10deg);
+  }
+  50% {
+    transform: skew(10deg, 10deg) translate(100px);
+  }
+  100% {
+    transform: skew(-10deg, -10deg);
+  }
+}
+
+.bulbul {
+  background: orangered;
+}
+
+.bulbul:hover {
+  transform: scale(0.7) rotate(360deg);
+}

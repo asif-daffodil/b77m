@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  display: grid;
+  grid-gap: 16px;
+  padding: 16px;
+}
+
+.main > div {
+  box-shadow: 0 0 8px #000;
+  padding: 12px;
+  border-radius: 8px;
+  font: italic small-caps bolder 18px auto arial;
+}
+
+@media screen and (min-width: 920px) {
+  .main {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .main > div {
+    background: lightblue;
+  }
+}
+
+@media Screen and (min-width: 620px) and (max-width: 920px) {
+  .main {
+    grid-template-columns: auto auto;
+  }
+  .main > div {
+    background: lightgreen;
+  }
+}
+
+@media Screen and (max-width: 620px) {
+  .main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .main > div {
+    background: lightgoldenrodyellow;
+  }
+}

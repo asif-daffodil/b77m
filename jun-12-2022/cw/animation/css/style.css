@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: normal small-caps lighter 48px auto arial;
+  letter-spacing: 5px;
+  /* animation-name: myAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; */
+  animation: myAnimation 2s infinite linear;
+}
+
+@keyframes myAnimation {
+  0% {
+    background: lightblue;
+    font-size: 14px;
+    text-shadow: 0 0 0 #000;
+  }
+  50% {
+    background: lightgoldenrodyellow;
+    font-size: 54px;
+    text-shadow: 0 0 10px #000;
+  }
+  100% {
+    background: lightblue;
+    font-size: 14px;
+    text-shadow: 0 0 0 #000;
+  }
+}

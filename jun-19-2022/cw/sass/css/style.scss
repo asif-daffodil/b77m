@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$bgColor: cornflowerblue;
+
+@mixin aluKhalu($w: 100px, $h: 150px) {
+  width: $w;
+  height: $h;
+  background: $bgColor;
+  margin: 10px;
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alu {
+  @include aluKhalu(100px, 100px);
+}
+
+.khalu {
+  @include aluKhalu(200px, 100px);
+}
+
+.volu {
+  @extend .khalu;
+  background: dodgerblue;
+}
+
+.kalu {
+  @include aluKhalu();
+}
+
+.prothibi {
+  width: 400px;
+  height: 400px;
+  background: dodgerblue;
+  @include center();
+  > .asia {
+    width: 300px;
+    height: 300px;
+    background: cornflowerblue;
+    @include center();
+    > .bangladesh {
+      width: 200px;
+      height: 200px;
+      background: limegreen;
+      @include center();
+      > .dhaka {
+        width: 100px;
+        height: 100px;
+        background: orange;
+        @include center();
+        > .dhanmondi {
+          width: 50px;
+          height: 50px;
+          background: orangered;
+          @include center();
+        }
+      }
+    }
+  }
+}

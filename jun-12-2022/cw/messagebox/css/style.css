@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.main {
+  width: 300px;
+  padding: 20px;
+  margin: auto;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 8px #ddd, 0 0 6px #ddd inset;
+  border-radius: 8px;
+  font: normal small-caps lighter 14px 32px arial;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 1px dodgerblue;
+  position: relative;
+}
+
+.main::before {
+  content: "Asif Abir";
+  position: absolute;
+  top: 0;
+  right: 10%;
+  background: dodgerblue;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transform: translateY(-50%);
+}
+
+.main > p {
+  margin: 12px 0;
+}
+
+.main > button {
+  padding: 8px 16px;
+  border-width: 0;
+  background: cornflowerblue;
+  color: #fff;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px #000;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.main > button:hover {
+  box-shadow: 6px 6px 6px #000;
+}
