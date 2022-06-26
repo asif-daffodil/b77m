@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin navAnchor {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  font: normal small-caps 300 18px / 50px Arial;
+  letter-spacing: 3px;
+}
+
+@mixin navLiBefore {
+  content: "";
+  position: absolute;
+  top: calc(100% - 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(to right, orange, orangered, orange);
+  width: 0%;
+  height: 6px;
+  transition: 0.5s;
+}
+
+nav {
+  > ul {
+    width: 750px;
+    margin: 20px auto;
+    display: flex;
+    text-align: center;
+    background: linear-gradient(dodgerblue, darkblue);
+    > li {
+      list-style: none;
+      width: 100%;
+      transition: 0.5s;
+      position: relative;
+      > a {
+        @include navAnchor();
+      }
+      &::before {
+        @include navLiBefore();
+      }
+      > ul {
+        list-style: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: darkblue;
+        display: none;
+        > li {
+          width: 100%;
+          position: relative;
+          > a {
+            @include navAnchor();
+          }
+          &::before {
+            @include navLiBefore();
+          }
+          &:hover {
+            &::before {
+              width: 100%;
+            }
+          }
+          ul {
+            list-style: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            background: darkblue;
+            width: 100%;
+            display: none;
+            > li {
+              width: 100%;
+              position: relative;
+              > a {
+                @include navAnchor();
+              }
+              &::before {
+                @include navLiBefore();
+              }
+              &:hover {
+                &::before {
+                  width: 100%;
+                }
+              }
+            }
+          }
+          &:hover {
+            &::before {
+              width: 100%;
+            }
+            > ul {
+              display: block;
+            }
+          }
+        }
+      }
+      &:hover {
+        &::before {
+          width: 100%;
+        }
+        > ul {
+          display: block;
+        }
+      }
+    }
+  }
+}

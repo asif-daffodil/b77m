@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav > ul {
+  width: 750px;
+  margin: 20px auto;
+  display: flex;
+  text-align: center;
+  background: linear-gradient(dodgerblue, darkblue);
+}
+nav > ul > li {
+  list-style: none;
+  width: 100%;
+  transition: 0.5s;
+  position: relative;
+}
+nav > ul > li > a {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  font: normal small-caps 300 18px/50px Arial;
+  letter-spacing: 3px;
+}
+nav > ul > li::before {
+  content: "";
+  position: absolute;
+  top: calc(100% - 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(to right, orange, orangered, orange);
+  width: 0%;
+  height: 6px;
+  transition: 0.5s;
+}
+nav > ul > li > ul {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: darkblue;
+  display: none;
+}
+nav > ul > li > ul > li {
+  width: 100%;
+  position: relative;
+}
+nav > ul > li > ul > li > a {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  font: normal small-caps 300 18px/50px Arial;
+  letter-spacing: 3px;
+}
+nav > ul > li > ul > li::before {
+  content: "";
+  position: absolute;
+  top: calc(100% - 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(to right, orange, orangered, orange);
+  width: 0%;
+  height: 6px;
+  transition: 0.5s;
+}
+nav > ul > li > ul > li:hover::before {
+  width: 100%;
+}
+nav > ul > li > ul > li ul {
+  list-style: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: darkblue;
+  width: 100%;
+  display: none;
+}
+nav > ul > li > ul > li ul > li {
+  width: 100%;
+  position: relative;
+}
+nav > ul > li > ul > li ul > li > a {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  font: normal small-caps 300 18px/50px Arial;
+  letter-spacing: 3px;
+}
+nav > ul > li > ul > li ul > li::before {
+  content: "";
+  position: absolute;
+  top: calc(100% - 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(to right, orange, orangered, orange);
+  width: 0%;
+  height: 6px;
+  transition: 0.5s;
+}
+nav > ul > li > ul > li ul > li:hover::before {
+  width: 100%;
+}
+nav > ul > li > ul > li:hover::before {
+  width: 100%;
+}
+nav > ul > li > ul > li:hover > ul {
+  display: block;
+}
+nav > ul > li:hover::before {
+  width: 100%;
+}
+nav > ul > li:hover > ul {
+  display: block;
+}/*# sourceMappingURL=style.css.map */
