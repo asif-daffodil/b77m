@@ -1,0 +1,18 @@
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: #000 !important;
+}
+
+.dropdown-divider {
+  background: #fff;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+}/*# sourceMappingURL=style.css.map */

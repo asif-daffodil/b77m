@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 200px;
+  margin: 20px auto;
+  > .img {
+    margin-bottom: 20px;
+    img {
+      display: block;
+      margin: auto;
+    }
+  }
+  > .btns {
+    display: flex;
+    justify-content: space-around;
+    > button {
+      padding: 6px 10px;
+      cursor: pointer;
+    }
+  }
+}

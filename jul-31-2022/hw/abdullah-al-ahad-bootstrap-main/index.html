@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Server</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <img src="./img/logo.png" id="logo" alt="">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Movies</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">TV Series</a>
+                          </li> 
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              More
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">Profile</a></li>
+                              <li><a class="dropdown-item" href="#">Settings</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Log Out</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                          <form>
+                            <div class="input-group">
+                              <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
+                              <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            </div>
+                          </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/img-3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <img src="./img/img-3-logo.png" alt="">
+                    <h4>THe Godfather (1972)</h4>
+                    <p>HD 1080p • IMDb &nbsp;0/10 • Hollywood • Action,Thriller, • English</p>
+                    <p id="description">The Godfather is a 1972 American crime film[2] directed by Francis Ford Coppola, who co-wrote the screenplay with Mario Puzo, based on Puzo's best-selling 1969 novel of the same name.</p><br>
+                    <button type="button" class="btn btn-light">Watch Now <i class="fa-regular fa-circle-play"></i></button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/img-1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <img src="./img/img-1-logo.png" alt="">
+                    <h4>Avengers: Infinity War (2019)</h4>
+                    <p>HD 1080p • IMDb &nbsp;0/10 • Hollywood • Action,Thriller, • English</p>
+                    <p id="description">Avengers: Infinity War is a 2018 American superhero film based on the Marvel Comics superhero team the Avengers.Produced by Marvel Studios and distributed ...</p><br>
+                    <button type="button" class="btn btn-light">Watch Now <i class="fa-regular fa-circle-play"></i></button>
+                </div>
+              </div>
+            <div class="carousel-item">
+                <img src="./img/img-2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <img src="./img/img-2-logo.png" alt="">
+                    <h4>Dark Knight (2008)</h4>
+                    <p>HD 1080p • IMDb &nbsp;0/10 • Hollywood • Action,Thriller, • English</p>
+                    <p id="description">The Dark Knight is a 2008 superhero film directed by Christopher Nolan from a screenplay he co-wrote with his brother Jonathan.</p><br>
+                    <button type="button" class="btn btn-light">Watch Now <i class="fa-regular fa-circle-play"></i></button>
+                </div>
+              </div>
+              
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+</body>
+</html>

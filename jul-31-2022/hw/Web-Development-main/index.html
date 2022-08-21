@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Bootstrap and style -->
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Bootstrap Project</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <h2 class="text-warning"> KHALID</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mob-navbar" aria-label="Toggle">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mob-navbar">
+                <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">SERVICES</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">WEB DESIGN</a></li>
+                            <li><a class="dropdown-item" href="#">WEB DEVELOPMENT</a></li>
+                            <li><a class="dropdown-item" href="#">CORE PYTHON </li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#">EXPLORE MORE</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">VISIT US</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-warning" type="submit">LOGIN</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- End Header Section -->
+
+<!-- Banner Section -->
+<section id="banner">
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <ol class="carousel-indicators">
+          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="https://www.markuptag.com/images/slider-img-1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                  <h3>Web Development</h3>
+                  <p>Web programming, also known as web development, is the creation of dynamic web applications.</p>
+                  <a href="#" class="btn btn-warning">Read More</a>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="https://www.markuptag.com/images/slider-img-2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                  <h3>Web Designing</h3>
+                  <p>Web design refers to the design of websites that are displayed on the internet. 
+                    It usually refers to the user experience aspects of website development rather than software development. </p>
+                  <a href="#" class="btn btn-warning">Read More</a>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="https://www.markuptag.com/images/slider-img-3.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                  <h3>App Development</h3>
+                  <p>Web programming, also known as web development, is the creation of dynamic web applications.</p>
+                  <a href="#" class="btn btn-warning">Read More</a>
+              </div>
+          </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </a>
+  </div>
+</section>
+<!-- End Banner Section -->
+
+<!-- JavaScript and popper site -->
+    <script src="./js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

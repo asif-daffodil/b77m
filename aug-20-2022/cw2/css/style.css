@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 200px;
+  margin: 20px auto;
+}
+.main > .img {
+  margin-bottom: 20px;
+}
+.main > .img img {
+  display: block;
+  margin: auto;
+}
+.main > .btns {
+  display: flex;
+  justify-content: space-around;
+}
+.main > .btns > button {
+  padding: 6px 10px;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

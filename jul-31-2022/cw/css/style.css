@@ -1,0 +1,19 @@
+.carousel-indicators [data-bs-target] {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.mynav {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.cimg {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=style.css.map */

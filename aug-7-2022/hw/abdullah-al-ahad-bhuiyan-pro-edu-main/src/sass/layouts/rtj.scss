@@ -1,0 +1,72 @@
+.rtj{
+
+    @media (min-width:768px){
+    margin-block: 3.75rem;
+    }
+    @media (min-width:992px){
+    padding-top: 3em;
+    
+    }
+    .card{
+        
+        .card-body{
+            text-align: center;
+            background: #289BDE;
+            color: #fff;
+            padding: 30px 20px;
+            @media (min-width:768px){
+                padding: 3.625rem 6.438rem;
+            }
+            @media (min-width:992px){
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 3.625rem 5.438rem;
+                >div{
+                    text-align: left;
+                    flex-basis: 56%;
+                }
+            }
+            .card-title{
+                font-size: 1.13rem;
+                font-weight: 600;
+                @media (min-width:768px){
+                    font-size: 1.875rem;
+                }
+                @media (min-width:992px){
+                    font-size: 2.1rem;
+                    margin-bottom: 0.5em;
+                }
+                
+            }
+            .card-text{
+                font-size:0.88rem;
+                line-height: 1.5rem;
+                margin-bottom: 1.5em;
+                @media (min-width:768px){
+                font-size: 0.9rem;
+                line-height: 1.875rem;
+                }
+                @media (min-width:992px){
+                    font-size: 0.8rem;
+                    line-height: 1.5rem;
+                    font-weight: 300;
+                    inline-size: 390px;
+                }
+            }
+            .button{
+                padding: 0.44rem 1.13rem;
+                font-weight: 600;
+                color: #289BDE;
+                @media (min-width:768px){
+                    font-size: 1.13rem;
+                    padding: 0.69rem 1.13rem;
+                }
+                @media (min-width:992px){
+                    font-size: 1rem;
+                    padding: 0.61rem 1.86rem;
+                }
+            }
+        }
+    }
+}

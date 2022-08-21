@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    nav{
+        >.logo{
+            background: rgba(0,0,0,1);
+            >img{
+                height: 50px;
+                margin-left: 20px;
+    
+            }
+        }
+        >ul{
+            width: 550px;
+            background: transparent;
+            display: flex;
+            margin: -55px auto;
+            position: relative;
+            > li{
+                padding: 13px 20px;
+                text-align: center;
+                width: 100%;
+                transition: 0.3s;
+                cursor: pointer;
+                >a{
+                    color: white;
+                    font-weight: bold;
+                    >i{
+                        font-size: 16px;
+                        padding: 4px
+                    }
+                }
+                
+                &:hover{
+                    background: white;
+                    >a{
+                        color: black;
+                    }
+                }
+    
+                >div{
+                    position: absolute;
+                    top: 100%;
+                    left: -230px;
+                    width: 1000px;
+                    background: #fff;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    height: 0;
+                    overflow: hidden;
+                    border: 2px solid #000;
+                    filter: opacity(0);
+                    border-top: none;
+                    transition: 0.5s;
+                    > ul{
+                        
+                        >li{
+                            width: 100%;
+                            display: block;
+                            >a{
+                                color: rgba(0, 0, 0, 0.849);
+                            }
+                        }
+                        > li:first-child{
+                            font-weight: bolder; 
+                            margin-bottom: 5px;
+                            border-bottom: 2px solid black;
+                            >a{
+                                font-size: 18px;
+                                color: black;
+                                padding: 20px 20px;
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    background: rgba($color: #fff, $alpha: 1);
+                    > div {
+                        filter: opacity(1);
+                      height: 170px;
+                      padding: 10px 0;
+                    }
+                  }
+            }
+        }
+    }
+    
+    
+}
+
+main{
+    width: 100%;
+    height: 80vh;
+    background: url("../img/pc.jpg");
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    >.dark{
+        background: rgba(0, 0, 0, 0.39);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        >.info{
+            margin: auto auto 80px;
+            text-align: center;
+            >h2{
+                color: white;
+                font-size: 50px;
+            }
+            >p{
+                color: white;
+                text-align: center;
+                width: 70%;
+                margin: auto;
+                padding-block: 10px 50px;
+            }
+            >button{
+                padding: 10px 22px;
+                font-size: 1rem;
+                font-weight: bolder;
+                background: white;
+                border: 2px solid #fff;
+                border-radius: 5px;
+                transition: 0.3s linear;
+                cursor: pointer;
+                &:hover{
+                    background: transparent;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    padding-inline: 100px;
+    >h2{
+        padding-block: 50px 20px;
+        text-align: center;
+    }
+}

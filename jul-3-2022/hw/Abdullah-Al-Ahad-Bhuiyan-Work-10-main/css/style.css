@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+}
+
+header nav > .logo {
+  background: black;
+}
+
+header nav > .logo > img {
+  height: 50px;
+  margin-left: 20px;
+}
+
+header nav > ul {
+  width: 550px;
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: -55px auto;
+  position: relative;
+}
+
+header nav > ul > li {
+  padding: 13px 20px;
+  text-align: center;
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+header nav > ul > li > a {
+  color: white;
+  font-weight: bold;
+}
+
+header nav > ul > li > a > i {
+  font-size: 16px;
+  padding: 4px;
+}
+
+header nav > ul > li:hover {
+  background: white;
+}
+
+header nav > ul > li:hover > a {
+  color: black;
+}
+
+header nav > ul > li > div {
+  position: absolute;
+  top: 100%;
+  left: -230px;
+  width: 1000px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 0;
+  overflow: hidden;
+  border: 2px solid #000;
+  -webkit-filter: opacity(0);
+          filter: opacity(0);
+  border-top: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header nav > ul > li > div > ul > li {
+  width: 100%;
+  display: block;
+}
+
+header nav > ul > li > div > ul > li > a {
+  color: rgba(0, 0, 0, 0.849);
+}
+
+header nav > ul > li > div > ul > li:first-child {
+  font-weight: bolder;
+  margin-bottom: 5px;
+  border-bottom: 2px solid black;
+}
+
+header nav > ul > li > div > ul > li:first-child > a {
+  font-size: 18px;
+  color: black;
+  padding: 20px 20px;
+}
+
+header nav > ul > li:hover {
+  background: white;
+}
+
+header nav > ul > li:hover > div {
+  -webkit-filter: opacity(1);
+          filter: opacity(1);
+  height: 170px;
+  padding: 10px 0;
+}
+
+main {
+  width: 100%;
+  height: 80vh;
+  background: url("../img/pc.jpg");
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+main > .dark {
+  background: rgba(0, 0, 0, 0.39);
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main > .dark > .info {
+  margin: auto auto 80px;
+  text-align: center;
+}
+
+main > .dark > .info > h2 {
+  color: white;
+  font-size: 50px;
+}
+
+main > .dark > .info > p {
+  color: white;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  padding-block: 10px 50px;
+}
+
+main > .dark > .info > button {
+  padding: 10px 22px;
+  font-size: 1rem;
+  font-weight: bolder;
+  background: white;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+
+main > .dark > .info > button:hover {
+  background: transparent;
+  color: #fff;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  padding-inline: 100px;
+}
+
+section > h2 {
+  padding-block: 50px 20px;
+  text-align: center;
+}

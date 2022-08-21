@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ashraf</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- -----start----- -->
+    <div class="container">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand text-uppercase fst-italic fw-bold" href="#"
+              >Ashraf</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#service">Service</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Portfolio
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#me">Me</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Contact</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#customer"
+                        >Customer Review</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+              </ul>
+              <form class="">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Search"
+                    aria-label="Search"
+                    aria-describedby="basic-addon1"
+                  />
+                  <span class="input-group-text" id="basic-addon1"
+                    ><i class="fa-solid fa-magnifying-glass"></i
+                  ></span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="row">
+        <div class="col-md-12 p-0">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-interval="2000"
+            data-pause="hover"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="4"
+                aria-label="Slide 5"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="5"
+                aria-label="Slide 6"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="6"
+                aria-label="Slide 7"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="7"
+                aria-label="Slide 8"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./img/image1.jpg"
+                  class="d-block w-100 img-fluid"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>
+                    Some representative placeholder content for the first slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./img/image2.jpg"
+                  class="d-block w-100 img-fluid"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>
+                    Some representative placeholder content for the second
+                    slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./img/image3.jpg"
+                  class="d-block w-100 img-fluid"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>
+                    Some representative placeholder content for the third slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./img/image4.jpg"
+                  class="d-block w-100 img-fluid"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Fourth slide label</h5>
+                  <p>
+                    Some representative placeholder content for the fourth
+                    slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./img/image5.jpg"
+                  class="d-block w-100 img-fluid"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Five slide label</h5>
+                  <p>
+                    Some representative placeholder content for the Five slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./img/image6.jpg"
+                  class="d-block w-100 img-fluid"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Sixth slide label</h5>
+                  <p>
+                    Some representative placeholder content for the sixth slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./img/image7.jpg"
+                  class="d-block w-100 img-fluid"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Seventh slide label</h5>
+                  <p>
+                    Some representative placeholder content for the seventh
+                    slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./img/image8.jpg"
+                  class="d-block w-100 img-fluid"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Eight slide label</h5>
+                  <p>
+                    Some representative placeholder content for the eight slide.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row service-section bg-light py-md-3 py-2" id="service">
+        <h1 class="text-center fw-bold display-5 pt-sm-5 pb-sm-3 py-4">
+          Service
+        </h1>
+        <div class="row m-auto text-center">
+          <div class="col-lg-3 col-md-6 mt-sm-4">
+            <i
+              class="p-3 mb-3 rounded-circle fa-2x fa-solid fa-handshake-angle"
+            ></i>
+            <h3 class="text-uppercase pb-2 fw-bold">Web Design</h3>
+            <p class="text-muted text-success">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+              laudantium rem doloribus ullam odio quisquam. Lorem, ipsum dolor
+              sit amet consectetur adipisicing elit. A, debitis. Lorem ipsum
+              dolor sit amet.
+            </p>
+            <button class="btn btn-outline-info">Read More</button>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-sm-4 mt-4">
+            <i class="p-3 mb-3 fa-2x rounded-circle fa-solid fa-pen"></i>
+            <h3 class="text-uppercase pb-2 fw-bold">Web Design</h3>
+            <p class="text-muted text-info">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+              laudantium rem doloribus ullam odio quisquam. Lorem, ipsum dolor
+              sit amet consectetur adipisicing elit. A, debitis. Lorem ipsum
+              dolor sit amet.
+            </p>
+            <button class="btn btn-outline-info">Read More</button>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-sm-4 mt-4">
+            <i class="p-3 mb-3 fa-2x rounded-circle fa-solid fa-display"></i>
+            <h3 class="text-uppercase pb-2 fw-bold">Web Design</h3>
+            <p class="text-muted text-success">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+              laudantium rem doloribus ullam odio quisquam. Lorem, ipsum dolor
+              sit amet consectetur adipisicing elit. A, debitis. Lorem ipsum
+              dolor sit amet.
+            </p>
+            <button class="btn btn-outline-info">Read More</button>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-sm-4 mt-4">
+            <i class="p-3 mb-3 fa-2x rounded-circle fa-solid fa-car"></i>
+            <h3 class="text-uppercase pb-2 fw-bold">Web Design</h3>
+            <p class="text-muted text-success">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+              laudantium rem doloribus ullam odio quisquam. Lorem, ipsum dolor
+              sit amet consectetur adipisicing elit. A, debitis. Lorem ipsum
+              dolor sit amet.
+            </p>
+            <button class="btn btn-outline-info">Read More</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- my introduction started here -->
+
+      <div id="me" class="row introduction-div">
+        <div class="col-xl-4 col-12 p-5">
+          <img
+            src="./img/Ashraf Picture.jpg"
+            alt=""
+            class="img-fluid rounded-circle img-thumbnail shadow mx-auto d-block"
+          />
+        </div>
+        <div class="col-xl-8 col-12 p-5 text-center">
+          <h1 class="fw-bolder text-center mb-3 fst-italic">Ashraf Uz Mahim</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+            suscipit?
+          </p>
+          <a
+            href="#demo"
+            data-bs-toggle="collapse"
+            class="btn btn-outline-dark mb-2 btn-sm"
+            title="click here"
+            >Learn more</a
+          >
+          <div id="demo" class="collapse">
+            <p class="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+              modi tempore id odio quod cum aliquid facere numquam, consectetur
+              officia suscipit, rerum molestiae! Repudiandae accusamus
+              perspiciatis assumenda rem, in libero, maxime eum natus hic,
+              sapiente possimus error facere? Est voluptatem ipsum dolore
+              tenetur aspernatur perspiciatis iste, odit sunt non suscipit.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- my introduction end here -->
+
+      <!-- blockquotes and abbribution starts here!  -->
+
+      <div id="customer" class="customer-service">
+        <div class="row customer-row px-md-3 px-2 py-2">
+          <h1 class="fw-bolder py-4 py-sm-5 text-center">Customer Review</h1>
+          <div class="col-xl-3 text-center col-lg-6">
+            <blockquote class="blockquote">
+              <i
+                class="fa-solid fa-user fa-2x rounded-circle p-3 text-light bg-black mb-3 mt-sm-2 mt-3"
+              ></i>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Delectus magnam quia laborum saepe molestias error labore quo
+                deserunt impedit, eum distinctio incidunt quidem doloribus ad
+                vero? Excepturi commodi vero obcaecati harum delectus. Now we
+                are learn <abbr title="bootstrap5">bs5</abbr>
+              </p>
+              <footer class="blockquote-footer pt-3">
+                Ashraf <cite> Freelancer </cite>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="col-xl-3 text-center col-lg-6">
+            <blockquote class="blockquote">
+              <i
+                class="fa-solid fa-user fa-2x rounded-circle p-3 text-light bg-black mb-3 mt-sm-2 mt-3"
+              ></i>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Delectus magnam quia laborum saepe molestias error labore quo
+                deserunt impedit. Lorem ipsum dolor sit amet. saepe amet tempora
+                labore ipsa? Eaque ab officiis aliquam saepe cupiditate. Now we
+                are learn
+                <abbr title="bootstrap5">bs5</abbr>
+              </p>
+              <footer class="blockquote-footer pt-3">
+                Ashraf <cite> Freelancer </cite>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="col-xl-3 text-center col-lg-6">
+            <blockquote class="blockquote">
+              <i
+                class="fa-solid fa-user fa-2x rounded-circle p-3 text-light bg-black mb-3 mt-sm-2 mt-3"
+              ></i>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Delectus magnam quia laborum saepe molestias error labore quo
+                deserunt impedit, eum distinctio incidunt quidem doloribus ad
+                vero? Excepturi commodi vero obcaecati harum delectus. Now we
+                are learn <abbr title="bootstrap5">bs5</abbr>
+              </p>
+              <footer class="blockquote-footer pt-3">
+                Ashraf <cite> Freelancer </cite>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="col-xl-3 text-center col-lg-6">
+            <blockquote class="blockquote">
+              <i
+                class="fa-solid fa-user fa-2x rounded-circle p-3 text-light bg-black mb-3 mt-sm-2 mt-3"
+              ></i>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Delectus magnam quia laborum saepe molestias error labore quo
+                deserunt impedit, eum distinctio incidunt quidem doloribus ad
+                vero? Excepturi commodi vero obcaecati harum delectus. Now we
+                are learn <abbr title="bootstrap5">bs5</abbr>
+              </p>
+              <footer class="blockquote-footer pt-3">
+                Ashraf <cite> Freelancer </cite>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+      <!-- blockquote and abbribution end here -->
+    </div>
+    <!-- -----end----- -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

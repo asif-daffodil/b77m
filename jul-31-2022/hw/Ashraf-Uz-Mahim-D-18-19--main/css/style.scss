@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  > .row {
+    .navbar {
+      background-color: #c9dff6;
+      > .container-fluid {
+        > .text-uppercase {
+          font-weight: bold;
+          font-variant: small-caps;
+          color: rgb(0, 87, 128);
+          letter-spacing: 2px;
+          font-family: "Lobster", cursive;
+          transition: 0.5s;
+          &:hover {
+            color: rgba(9, 68, 68, 0.781);
+          }
+        }
+        > .collapse {
+          > .navbar-nav {
+            > .nav-item {
+              margin: 0px 5px;
+            }
+          }
+          > form {
+            > .input-group {
+              > .input-group-text {
+                > .fa-magnifying-glass {
+                  background: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .carousel-caption {
+    background-color: #9ecdff65;
+    position: absolute;
+    right: 18%;
+    bottom: 1.25rem;
+    left: 18%;
+    padding-bottom: 10px;
+    padding-top: 6px;
+    color: #fff;
+    text-align: center;
+    > .h5,
+    h5 {
+      font-size: 35px;
+      font-variant: small-caps;
+    }
+    > p {
+      font-size: 18px;
+    }
+  }
+  .carousel-indicators [data-bs-target] {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 0px 5px;
+  }
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 80% 100%;
+    border-radius: 50%;
+    background-color: rgba(158, 205, 255, 0.3960784314);
+  }
+  .fa-solid,
+  .fas {
+    background-color: #c9dff6;
+  }
+
+  .btn-outline-info {
+    font-weight: bold;
+    margin: 10px 0px;
+    &:hover {
+      background-color: #c9dff6;
+      color: #000;
+    }
+  }
+  @media only screen and (max-width: 576) {
+    .container .fa-solid,
+    .container .fas {
+      margin-top: 20px;
+    }
+  }
+  .customer-service {
+    .customer-row {
+      background-color: #e4f1ffda;
+      > .col-xl-3 {
+        > .blockquote {
+          > .fa-solid {
+            font-size: 25px;
+            padding: 13px 15px !important;
+          }
+          > p {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+  > .introduction-div {
+    > .col-xl-4 {
+      background-color: #99b8c7d5;
+    }
+    > .col-xl-8 {
+      background-color: #c0e0efe6;
+    }
+  }
+}

@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: url("../images/dogvai.jpg") no-repeat fixed;
+  background-size: cover;
+}
+
+nav {
+  width: 100%;
+  background-color: #242526;
+  position: fixed;
+}
+nav .warapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  padding-right: 100px;
+}
+nav .warapper .logo {
+  font-size: 35px;
+  font-weight: 900;
+  padding: 11px;
+}
+nav .warapper .logo a {
+  transition: 0.5s;
+}
+nav .warapper .logo a:hover {
+  color: aqua;
+}
+nav .warapper .logo a {
+  color: #fff;
+  text-decoration: none;
+}
+nav .warapper .nav-links li {
+  display: inline-block;
+  padding: 21px 25px;
+  transition: 0.4s;
+}
+nav .warapper .nav-links li:hover {
+  background: #4A4B4C;
+  cursor: pointer;
+}
+nav .warapper .nav-links li:hover a {
+  color: hotpink;
+}
+nav .warapper .nav-links li:hover .dropdown_menu li a {
+  color: #fff;
+}
+nav .warapper .nav-links li a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 600;
+}
+nav .warapper .nav-links .drop_hover i {
+  color: #fff;
+  margin-left: 6px;
+  transform: rotate(0deg);
+  transition: 0.5s;
+}
+nav .warapper .nav-links .drop_hover:hover i {
+  transform: rotate(90deg);
+}
+nav .warapper .nav-links .drop_hover:hover .dropdown_menu {
+  height: 316px;
+  visibility: visible;
+}
+nav .warapper .nav-links .drop_hover:hover .dropdown_menu li a {
+  color: #fff;
+}
+nav .warapper .nav-links .dropdown_menu {
+  position: absolute;
+  width: 230px;
+  background-color: #242526;
+  margin-left: -50px;
+  top: 63px;
+  height: 0;
+  transition: 0.7s;
+  visibility: hidden;
+}
+nav .warapper .nav-links .dropdown_menu li {
+  display: block;
+}
+nav .warapper .nav-links .dropdown_menu .drop_sub_menu {
+  position: absolute;
+  margin-left: 205px;
+  margin-top: -40px;
+  background-color: #242526;
+  width: 0;
+  transition: 0.6s;
+  height: 250px;
+  visibility: hidden;
+  overflow: hidden;
+}
+nav .warapper .nav-links .dropdown_menu .drop_drop_menu i {
+  transform: rotate(90deg);
+}
+nav .warapper .nav-links .dropdown_menu .drop_drop_menu:hover i {
+  transform: rotate(0deg);
+}
+nav .warapper .nav-links .dropdown_menu .drop_drop_menu:hover .drop_sub_menu {
+  width: 200px;
+  visibility: visible;
+}
+nav .warapper .nav-links .mega_hover:hover .mega_menu {
+  height: 300px;
+  visibility: visible;
+}
+nav .warapper .nav-links .mega_hover:hover .mega_menu .row ul li a {
+  color: lime;
+}
+nav .warapper .nav-links .mega_menu {
+  width: 92%;
+  position: absolute;
+  background-color: #242526;
+  left: 55px;
+  top: 63px;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  transition: 0.6s;
+}
+nav .warapper .nav-links .mega_menu .mega_content {
+  padding: 30px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .warapper .nav-links .mega_menu .mega_content .row:nth-child(2) {
+  margin-left: -70px;
+}
+nav .warapper .nav-links .mega_menu .mega_content .row h2 {
+  margin-bottom: 18px;
+  color: wheat;
+}
+nav .warapper .nav-links .mega_menu .mega_content .row ul {
+  border-left: #222222;
+}
+nav .warapper .nav-links .mega_menu .mega_content .row ul li {
+  display: block;
+  text-align: left;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+nav .warapper .nav-links .mega_menu .mega_content .row ul li:hover a {
+  color: #fff;
+}
+nav .warapper .nav-links .mega_menu .mega_content .row img {
+  width: 400px;
+  height: 240px;
+  padding-left: 0;
+  margin-right: 0;
+}/*# sourceMappingURL=style.css.map */

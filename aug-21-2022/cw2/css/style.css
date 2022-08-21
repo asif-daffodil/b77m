@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 600px;
+  margin: 20px auto;
+}
+.main > .heading {
+  width: 100%;
+  display: flex;
+  transition: 0.3s;
+}
+.main > .heading > div {
+  width: 100%;
+  text-align: center;
+  font: normal small-caps bolder 20px auto arial;
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.main > .heading > div:not(:last-child) {
+  border-right-width: 0;
+}
+.main > .heading > div:hover {
+  background: darkgray;
+}
+.main > .details {
+  width: 100%;
+  position: relative;
+  transition: 0.3s;
+}
+.main > .details > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-top-width: 0;
+  background: darkgray;
+}
+
+.d-none {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.active {
+  border-bottom-width: 0 !important;
+  background: darkgray;
+  transition: 0.3s;
+}/*# sourceMappingURL=style.css.map */

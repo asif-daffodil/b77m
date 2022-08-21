@@ -1,0 +1,39 @@
+.leapyear{
+    width: 900px;
+    margin:auto;
+    text-align: center;
+    background-color: brown;
+    color: white;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    
+    div{
+        margin-top: 60px;
+
+        h1{
+            margin-bottom: 30px;
+        }
+        .year{
+            width: 300px;
+            height: 40px;
+            font-size: 22px;
+            outline:none;
+            padding:2px 16px;
+            margin-bottom: 33px;
+        }
+        .year:focus{
+            color: red;
+            font-weight: 600;
+        }
+        .button{
+            padding: 5px 16px;
+            font-size: 17px;
+            background-color: black;
+            color: wheat;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            cursor: pointer;
+        }
+    }
+}

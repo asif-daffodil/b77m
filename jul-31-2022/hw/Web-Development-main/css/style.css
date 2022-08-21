@@ -1,0 +1,25 @@
+
+.carousel-caption {
+    background-color: rgb(0 0 0 / 46%);
+    text-align: left;
+    padding: 25px;
+    border-radius: 10px;
+}
+ol.carousel-indicators {
+    display: block;
+    left: auto;
+    bottom: 50px;
+    right: 15px;
+}
+.carousel-indicators li {
+    height: 5px;
+    background-color: #ffeb3b;
+    opacity: .7;
+}
+  
+.carousel-indicators [data-bs-target]{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+}

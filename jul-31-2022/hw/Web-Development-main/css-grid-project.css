@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(246, 243, 240);
+}
+
+.container{
+    width: 900px;
+    margin: 50px auto;
+    /* border: 1px solid gray; */
+    display: grid; color: rgb(26, 79, 125);
+    grid-template-rows: 60px 100px 200px 150px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+}
+
+h2{
+    background-color: rgb(204, 187, 164);
+    text-align: center;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+h3{
+  background-color: bisque;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+h4{
+    background-color: rgb(204, 187, 164);  
+    padding-right: 5px;
+}
+
+/* Header */
+.div1{
+    /* background-color:bisque; */
+    grid-column: 1/-1;
+}
+.div2{
+    background-color:rgb(205, 240, 142);
+    grid-column: 3/6;
+}
+.div3{
+    background-color:rgb(196, 233, 255);
+    grid-column: 6/9;
+
+}
+.div4{
+    background-color:rgb(255, 196, 251);
+    grid-column: 9/13;
+
+}
+
+/* MENU */
+.div5{
+    background-color:rgb(174, 173, 171);
+    grid-row: 2/4;
+    /* grid-column: 4/5; */
+    grid-column: 1/3;
+    text-align: center;
+}
+
+.div5 button{
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    
+}
+
+.div6{
+    /* background-color:rgb(255, 253, 196); */
+    grid-column: 3/13;
+
+}
+
+.div6 p{
+    background-color: rgb(202, 208, 175);
+    text-align: justify;
+    padding: 5px;
+}
+
+.div7{
+    grid-column: 1/-1;
+    text-align: end;
+}

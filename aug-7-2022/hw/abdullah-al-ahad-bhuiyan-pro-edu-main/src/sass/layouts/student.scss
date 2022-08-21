@@ -1,0 +1,190 @@
+.student{
+    .student-head{
+        text-align: center;
+        padding-inline: 25px ;
+        @media (min-width:768px){
+            margin-top: 2em;
+        }
+        @media (min-width: 992px){
+            inline-size: 590px;
+            margin-inline: auto;
+        }
+        h5{
+            font-size: 1.5rem;
+            line-height: 1.88rem;
+            font-weight: 600;
+            @media (min-width:768px){
+                font-size: 1.875rem;
+                line-height: 2.813rem;
+            }
+            @media (min-width: 992px){
+                font-size: 2.1rem;
+            }
+        }
+        p{
+            font-size: 0.88rem;
+            line-height: 1.31rem;
+            margin-bottom: 2rem;
+            color: #777777;
+            @media (min-width:768px){
+                font-size: 1rem;
+                line-height: 1.875rem;
+            }
+            @media (min-width: 992px){
+                font-size: 0.8rem;
+                line-height: 1.5rem;
+            }
+        }
+    }
+    .student-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media (min-width: 992px){
+            display: flex;
+            flex-direction: row;
+            gap: 25px;
+        }
+        .card{
+            margin-bottom:1.06rem;
+            text-align: center;
+            text-align: left;
+            position: relative;
+            @media (min-width:768px){
+                padding: 40px;
+            }
+            @media (min-width:992px){
+                padding: 2em;
+                .card-pre{
+                    position:absolute;
+                    height: 40px;
+                    width: 40px;
+                    background: #E5F6FF;
+                    top: 50%;
+                    left: 0;
+                    transform: translate(-50%, -50%);
+                    border-radius: 50%;
+                    i{
+                        position: absolute;
+                        left:15px;
+                        top: 12px;
+                        color: #289BDE;
+                    }
+                }
+                .card-next{
+                    position:absolute;
+                    height: 40px;
+                    width: 40px;
+                    background: #E5F6FF;
+                    top: 50%;
+                    right: 0;
+                    transform: translate(50%, -50%);
+                    border-radius: 50%;
+                    i{
+                        position: absolute;
+                        left:15px;
+                        top: 12px;
+                        color: #289BDE;
+
+                    }
+                }
+            }
+            .card-body{
+                @media (min-width: 768px){
+                    padding: 0;
+                }
+                .star{
+                    text-align: right;
+                    @media (min-width: 992px){
+                        img{
+                            height: 13px;
+                        }
+                    }
+                }
+                >.row{
+                    align-items: center;
+                    
+                }
+                .pro-pic{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        padding-right: 20px;
+                    }
+                }
+                .card-text{
+                    color: #777777;
+                    font-size: 0.875rem;
+                    line-height: 1.313rem;
+                    margin-bottom: 20px;
+                    @media (min-width:768px){
+                        font-size: 1rem;
+                        line-height: 1.875rem;
+                    }
+                    @media (min-width: 992px){
+                        font-size: 0.8rem;
+                        line-height: 1.5rem;
+                    }
+                    
+                }
+
+                .stu-cap{
+                    display:flex;
+                    >div{
+                        padding-left: 25px;
+                    }
+                }
+                .img-info{
+                    @media (min-width: 992px){
+                        padding-left: 20px;
+                    }
+                }
+    
+                .qut{
+                    padding: 10px 12px;
+                    @media (min-width:768px){
+                        padding-bottom: 20px;
+                    }
+                    @media (min-width: 992px){
+                        img{
+                            height: 35px;
+                        }
+                    }
+
+                }
+    
+                h4{
+                    font-weight: 600;
+                    font-size: 1.13rem;
+                    color: #4A4A4A;
+                    margin: 0;
+                    @media (min-width: 992px){
+                        font-size: 1rem;
+                    }
+                }
+                .profile-cap{
+                    color: #777777;
+                    margin: 0;
+                    @media (min-width: 992px){
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+    }
+    .student-footer{ 
+        display: flex;
+        align-items: center;
+        justify-content: center ;
+        button{
+            background: #289BDE;
+            font-size: 1.13rem;
+            padding: 0.69rem 1.13rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            @media (min-width:768px){
+                margin-bottom: 40px;
+            }
+        }
+    }
+}

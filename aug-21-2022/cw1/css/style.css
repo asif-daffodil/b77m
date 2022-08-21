@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 600px;
+  margin: 20px auto;
+  transition: 0.3s;
+}
+.main .header {
+  font: normal small-caps bolder 22px auto arial;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+}
+.main .header:hover {
+  background: darkgray;
+}
+.main .header::before {
+  content: "+";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+}
+.main .details {
+  border: 1px solid #ccc;
+  border-top-width: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.active {
+  background: darkgray;
+}
+.active::before {
+  content: "+";
+  transform: rotate(45deg);
+  transition: 0.3s;
+}/*# sourceMappingURL=style.css.map */

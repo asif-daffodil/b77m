@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mochiy+Pop+One&display=swap');
+
+
+.dropdown-item:hover{
+    color: #000000 !important;
+}
+
+.container-fluid{
+    font-family: 'Bebas Neue', cursive;
+}
+
+.carousel-item h5{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 28px;
+    text-shadow: 2px 2px 1px #000000;
+}
+
+.carousel-item p{
+   font-family:  'Mochiy Pop One', sans-serif;
+   font-size: 14px;
+   letter-spacing: 2px;
+   text-shadow: 2px 2px 1px #000000;
+}
+
+.navbar-brand h3{
+    font-size: 25px;
+    margin-left: 30px;
+}
+

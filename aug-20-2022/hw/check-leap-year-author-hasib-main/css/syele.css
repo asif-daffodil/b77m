@@ -1,0 +1,37 @@
+.leapyear {
+  width: 900px;
+  margin: auto;
+  text-align: center;
+  background-color: brown;
+  color: white;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+.leapyear div {
+  margin-top: 60px;
+}
+.leapyear div h1 {
+  margin-bottom: 30px;
+}
+.leapyear div .year {
+  width: 300px;
+  height: 40px;
+  font-size: 22px;
+  outline: none;
+  padding: 2px 16px;
+  margin-bottom: 33px;
+}
+.leapyear div .year:focus {
+  color: red;
+  font-weight: 600;
+}
+.leapyear div .button {
+  padding: 5px 16px;
+  font-size: 17px;
+  background-color: black;
+  color: wheat;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}/*# sourceMappingURL=syele.css.map */
