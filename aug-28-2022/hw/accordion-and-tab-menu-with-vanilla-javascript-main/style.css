@@ -1,0 +1,148 @@
+.accordian_body{
+    max-height: 0;
+    transition: .6s;
+    overflow: hidden;
+}
+.accordian_head{
+    padding: 8px 20px;
+    border-bottom: 3px solid rgb(0,0,0,.1);
+    cursor: pointer;
+    position: relative;
+    background-color: rgb(0,0,0,.1);
+    margin-bottom: 8px;
+    overflow: hidden;
+    font-size: 20px;
+}
+.accordian_head button{
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.accordian_body p{
+    padding:10px 30px;
+}
+.accordian_head::before{
+    content: "^";
+    font-size: 30px;
+    position: absolute;
+    top: -3px;
+    right: 35px;
+    transition: .5s;
+    transform: rotate(180deg);
+}.active{
+    background-color: #E7F1FF;
+}
+.active{
+    color: #0C63E4;
+}
+.active::before{
+    content: "^";
+    font-size: 30px;
+    position: absolute;
+    color:hotpink;
+    top: 2px;
+    right: 35px;
+    transition: .5s;
+    transform: rotate(0deg);
+}
+
+
+.tab{
+    background-color: black;
+    padding: 16px;
+}
+
+.tab div{
+    display: inline;
+    transition: .5s;
+    cursor: pointer;
+    padding: 16px 20px;
+    padding: 16px 20px;
+    color: wheat;
+}
+
+.tab div:hover{
+    background-color: red;
+}
+
+
+.tabcontent, .tabcontent2,.tabcontent3, .tabcontent4{
+    padding: 30px 20px;
+    border-bottom: 5px solid red;
+    font-weight: 600;
+    
+}
+span{
+    background-color: black;
+    color: wheat;
+    padding: 4px 10px;
+    border-radius: 5px;
+
+}
+.show{
+   margin-top: 20px;
+}
+
+.tabcontent{
+    background-color: red;
+    color: white;
+}
+.tabcontent2{
+    background-color: #0C63E4;
+    color: white;
+}
+.tabcontent3{
+    background-color: hotpink;
+    color: #0C63E4;
+}
+.tabcontent4{
+    background-color: chartreuse;
+    color: red;
+}
+.tabcontent5{
+    background-color: black;
+    color: wheat;
+}
+.tabcontent5 span{
+    background-color: red;
+    color: white;
+}
+.tabcontent6{
+    background-color: yellowgreen;
+}
+.tabcontent7{
+    background-color: crimson;
+    color: white;
+}
+.tabcontent8{
+    background-color:darkblue;
+    color: white;
+}
+.tabcontent9{
+    background-color: darkgreen;
+    color: white;
+}
+
+.tabcontent2,.tabcontent3,.tabcontent4,.tabcontent5,.tabcontent6,.tabcontent7,.tabcontent8,.tabcontent9{
+    opacity: 0;
+    display: none;
+    transition: 2s;
+}
+.show{
+    margin-top: 0px;
+    padding:40px 30px;
+}
+.none{
+    opacity: 0 !important;
+    transition: .7s !important;
+    display: none !important;
+}
+.block{
+    opacity: 1 !important;
+    transition: .6s !important;
+    display: block !important;
+}
+.activebtn{
+    background-color: hotpink;
+}

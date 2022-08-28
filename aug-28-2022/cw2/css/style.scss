@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  > .main {
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #000, 0 0 10px #000 inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    > .date {
+      font: normal small-caps bolder 20px auto arial;
+      text-align: center;
+    }
+    > .time {
+      text-align: center;
+      font: italic normal lighter 18px auto arial;
+    }
+    > .week {
+      text-align: center;
+      font: normal normal lighter 16px auto arial;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      margin-top: 12px;
+      > div {
+        border: 1px solid #ccc;
+        padding: 4px 6px;
+        border-radius: 6px;
+      }
+    }
+  }
+}
+
+.activeWeek {
+  color: #00f;
+  border: 1px solid #00f !important;
+  box-shadow: 0 0 4px #00f, 0 0 4px #00f inset;
+}

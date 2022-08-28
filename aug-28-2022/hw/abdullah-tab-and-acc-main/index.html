@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab and Accordions</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1 id="acc">Accordion</h1>
+        <section class="accordion container">
+            <div class="acc acc-1">
+                <div class="header">Sample 1</div>
+                <div class="details"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur porro, similique expedita voluptates in tempore sit debitis a maiores ut quidem possimus consectetur odit explicabo incidunt. Repudiandae alias eveniet assumenda, sit magnam cum consequatur iusto unde doloribus dignissimos non sequi ipsa! Expedita, unde tenetur est culpa fuga sed vitae ipsa atque numquam nihil aut optio dolorum a quos mollitia magnam maxime fugit, quod sapiente. Nesciunt dolore, alias voluptate id illo voluptas. Autem culpa praesentium hic, pariatur quidem esse excepturi minima.</p></div>
+            </div>
+            <div class="acc acc-2">
+                <div class="header">Sample 2</div>
+                <div class="details"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur porro, similique expedita voluptates in tempore sit debitis a maiores ut quidem possimus consectetur odit explicabo incidunt. Repudiandae alias eveniet assumenda, sit magnam cum consequatur iusto unde doloribus dignissimos non sequi ipsa! Expedita, unde tenetur est culpa fuga sed vitae ipsa atque numquam nihil aut optio dolorum a quos mollitia magnam maxime fugit, quod sapiente. Nesciunt dolore, alias voluptate id illo voluptas. Autem culpa praesentium hic, pariatur quidem esse excepturi minima.</p></div>
+            </div>
+            <div class="acc acc-3">
+                <div class="header">Sample 3</div>
+                <div class="details"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur porro, similique expedita voluptates in tempore sit debitis a maiores ut quidem possimus consectetur odit explicabo incidunt. Repudiandae alias eveniet assumenda, sit magnam cum consequatur iusto unde doloribus dignissimos non sequi ipsa! Expedita, unde tenetur est culpa fuga sed vitae ipsa atque numquam nihil aut optio dolorum a quos mollitia magnam maxime fugit, quod sapiente. Nesciunt dolore, alias voluptate id illo voluptas. Autem culpa praesentium hic, pariatur quidem esse excepturi minima.</p></div>
+            </div>
+        </section>
+        <h1 id="tab">Tab</h1>
+        <section class="tab container">
+            <div class="btns">
+                <h3 class="city active1">Dhaka</h3>
+                <h3 class="city">Chittagong</h3>
+                <h3 class="city">Rajshahi</h3>
+            </div>
+            <div class="result">
+                <p class="baal" style="opacity: 1;">Dhaka (Bengali: ঢাকা, romanized: Ḍhākā, Bengali pronunciation: [ˈɖʱaka]), formerly known as Dacca, is the capital and largest city of Bangladesh, as well as the world's largest Bengali-speaking city. It is the eighth largest and sixth most densely populated city in the world with a population of 8.9 million residents as of 2011, and a population of over 21.7 million residents in the Greater Dhaka Area. According to a Demographia survey, Dhaka has the most densely populated built-up urban area in the world, and is popularly described as such in the news media. Dhaka is one of the major cities of South Asia and a major global Muslim-majority city. As part of the Bengal delta, the city is bounded by the Buriganga River, Turag River, Dhaleshwari River and Shitalakshya River.</p>
+                <p class="baal">Chittagong (Chittagonian: চিটাং; Bengali: চিটাগং), officially Chattogram (Bengali: চট্টগ্রাম), is the second-largest city in Bangladesh after Dhaka. It is the administrative seat of the eponymous division and district. It hosts the busiest seaport on the Bay of Bengal. The city is located on the banks of the Karnaphuli River between the Chittagong Hill Tracts and the Bay of Bengal. The Greater Chittagong Area had a population of more than 5.2 million in 2022.[10] In 2020, the city area had a population of more than 3.9 million.[11]</p>
+                <p class="baal">Rajshahi (Bengali: রাজশাহী) is a metropolitan city and a major urban, commercial and educational centre of Bangladesh. It is also the administrative seat of the eponymous division and district. Located on the north bank of the Padma River, near the Bangladesh-India border, the city has a population of over 763,580 residents. The town is surrounded by the satellite towns of Nowhata and Katakhali, which together build an urban agglomeration of about 1 million population. Modern Rajshahi lies in the ancient region of Pundravardhana. The foundation of the city dates to 1634, according to epigraphic records at the mausoleum of Sufi saint Shah Makhdum. The area hosted a Dutch settlement in the 18th century. The Rajshahi municipality was constituted during the British Raj in 1876. It was a divisional capital of the Bengal Presidency.</p>
+                
+            </div>
+
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js" integrity="sha512-GQ5/eIhs41UXpG6fGo4xQBpwSEj9RrBvMuKyE2h/2vw3a9x85T1Bt0JglOUVJJLeyIUl/S/kCdDXlE/n7zCjIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/CSSRulePlugin.min.js" integrity="sha512-LTEbTFikHcv/OwMKB2/SeC47wuF/Jxa8b75Bb8FF6QcuoDYuypI8OEIN1Z2IUMnziCtdd7EyjvLIW5Esmenucg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        
+        gsap.from("#acc",{opacity:0, y: -50, duration: 1});
+        gsap.from(".accordion",{opacity:0, y: -50, duration: 1, delay:0.5});
+        gsap.from("#tab",{opacity:0, y: -50, duration: 1, delay:1});
+        gsap.from(".tab",{opacity:0, y: -50, duration: 1, delay:1.5});
+    </script>
+</body>
+</html>
