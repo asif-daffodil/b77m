@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Form</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="icon" href="" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row d-flex min-vh-100">
+        <div class="col-md-5 m-auto border rounded shadow p-4">
+          <h2 class="mb-4">Sign in Form</h2>
+          <form action="" id="myForm">
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="form-control"
+                id="yname"
+              />
+              <label for="">Your Name</label>
+              <div class="invalid-feedback" id="errName"></div>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                placeholder="Your Email"
+                class="form-control"
+                id="yemail"
+              />
+              <label for="">Your Email</label>
+              <div class="invalid-feedback" id="errEmail"></div>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="confirmMe" />
+              <label for="" class="form-check-label"
+                >Please check to submit the form</label
+              >
+            </div>
+            <div class="mb-3">
+              <input
+                type="submit"
+                class="btn btn-primary btn-lg"
+                disabled
+                id="subMe"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
