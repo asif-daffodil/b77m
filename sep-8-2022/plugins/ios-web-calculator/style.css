@@ -1,0 +1,142 @@
+/*
+Colors --
+
+*/
+/*============================
+  PAGE LAYOUT
+============================*/
+
+/*============================
+  APP DESIGN
+============================*/
+#calculator {
+  font-size: 30px;
+  min-height: 400px;
+  min-width: 300px;
+  border-radius: 10px 10px 0 0;
+  height: auto;
+  padding: 20px;
+  background-color: #1a1a1d;
+  box-shadow: 5px 10px 20px 10px rgb(29, 25, 25);
+  display: grid;
+  grid-template:
+    "s s s s" 1fr
+    "a a a o" 1fr
+    "n n n o" 1fr
+    "n n n o" 1fr
+    "n n n o" 1fr
+    "n n n o" 1fr
+    / 1fr 1fr 1fr 1fr;
+}
+
+/*============================
+  CALCULATOR SCREEN
+============================*/
+.screen {
+  width: 100%;
+  height: auto;
+  grid-area: s;
+  background-color: #1a1a1d;
+  border-radius: 10px 10px 0 0;
+}
+
+.screen p {
+  display: inline-block;
+  color: white;
+  text-align: right;
+  width: 100%;
+  height: 100%;
+  font-size: 2.4rem;
+  user-select: none;
+}
+/*============================
+  CALCULATOR BUTTONS
+============================*/
+#calculator button {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  outline: none;
+  color: white;
+  user-select: none;
+  border: 1px transparent solid;
+  transition: all 0.3s ease;
+  font-size: 30px;
+}
+
+#zero {
+  border-radius: 6px !important;
+}
+
+/*=== BUTTON CONTAINERS===*/
+.container {
+  justify-items: center;
+  grid-gap: 5px;
+  padding: 5px 0;
+}
+
+.aux {
+  grid-area: a;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 0;
+}
+
+.operators {
+  grid-area: o;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  padding-right: 5px;
+}
+
+.numbers {
+  grid-area: n;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+/*=== AUXILLARY BUTTONS===*/
+
+.auxillary {
+  background-color: #9f9fa1;
+  color: black;
+}
+
+.auxillary:active {
+  background-color: #d3d3d4;
+}
+/*=== OPERATOR BUTTONS===*/
+.operator {
+  background-color: #c3073f;
+}
+
+.operator:active {
+  background-color: #a03152;
+  color: white;
+}
+
+.op-clicked {
+  background-color: white;
+  color: #c3073f;
+}
+
+#division {
+  font-size: 30px;
+}
+/*=== NUMBER BUTTONS===*/
+.numbers button {
+  background-color: #4e4e50;
+}
+
+.numbers button:active {
+  background-color: #a09e9e;
+  color: black;
+}
+
+#zero {
+  grid-column: span 2;
+  border-radius: 40px 40px;
+  min-width: 190px;
+  text-align: left;
+  text-indent: 15%;
+}

@@ -1,0 +1,48 @@
+@media screen and (max-width: 800px){
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
+    h1{
+        font-size: 35px;
+    }
+    button{
+        margin-top: 20px;
+        
+    }
+}
+@media screen and (max-width: 600px){
+    .clock{
+        height:350px ;
+        width: 350px;
+    }
+    .datetime{
+        width: 380px;
+    }
+    .date{
+        font-size: 18px;
+    }
+    .time{
+        font-size: 50px;
+    }
+   
+
+}
+@media screen and (max-width: 450px){
+    h1{
+        font-size: 30px;
+    }
+    .datetime{
+        width: 350px;
+    }
+    .clock{
+        height:330px ;
+        width: 330px;
+    }
+    .date{
+        font-size: 16px;
+    }
+    .time{
+        font-size: 45px;
+    }
+}

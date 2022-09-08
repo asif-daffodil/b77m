@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tiny SEO-Friendly Carousel jQuery Plugin Examples</title>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+      body {
+        font-family: 'Inter',Helvetica, Arial, Verdana, sans-serif;
+        line-height: 1.6;
+        background-color: #fafafa;
+      }
+      .container {
+        font-size: 14px;
+        width: 840px;
+        margin: 150px auto;
+      }
+      .slideshow {
+        width: 800px;
+        overflow: hidden;
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 3px solid #999;
+
+      }
+      .slides {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      .slide {
+        float: left;
+        width: 360px;
+        height: 150px;
+        padding: 20px;
+      }
+
+      .slideshow .prev,
+      .slideshow .next {
+        appearance: none;
+        margin: 2px 0;
+        padding: 4px 8px;
+        text-align: center;
+        vertical-align: middle;
+        border: 1px solid #dee0e8;
+        border-radius: 3px;
+      }
+      code {
+        background: #ccc;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 5px;
+      }
+
+      .nav {
+        margin-bottom: 0.2em;
+        text-align: center;
+      }
+      .nav button {
+        appearance: none;
+        cursor: pointer;
+        background-color: #fff;
+        border-width: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin: 0;
+        width: 1.8em;
+        height: 1.8em;
+        line-height: 1;
+        color: #00a3cb;
+        text-decoration: none;
+      }
+      .nav button:hover {
+        color: #00436b;
+      }
+      .nav button.vis,
+      .nav button.vis:hover {
+        background-color: #aaa;
+        color: white;
+      }
+      .nav button.active,
+      .nav button.active:hover {
+        background-color: #00a3cb;
+        color: white;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../src/jquery.jcarousellite.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        var carousel1Options = {
+          auto: true,
+          visible: 2,
+          speed: 300,
+          pause: true,
+          mouseWheel: true,
+          btnPrev: function () {
+            return $(this).find('.prev');
+          },
+          btnNext: function () {
+            return $(this).find('.next');
+          },
+        };
+
+        var carousel2Options = {
+          visible: 2,
+          speed: 300,
+          pause: true,
+          btnGo: $('div.nav').find('button'),
+        };
+
+        var carousel3Options = {
+          containerSelector: 'section',
+          itemSelector: 'article',
+          visible: 2,
+          speed: 300,
+          btnPrev: function () {
+            return $(this).find('.prev');
+          },
+          btnNext: function () {
+            return $(this).find('.next');
+          },
+        };
+
+        var $slideshows = $('.slideshow');
+
+        $slideshows.eq(0).jCarouselLite(carousel1Options);
+
+        $('.pause').on('click', function () {
+          $slideshows.eq(0).trigger('pauseCarousel');
+        });
+        $('.resume').on('click', function () {
+          $slideshows.eq(0).trigger('resumeCarousel');
+        });
+
+        $slideshows.eq(1).jCarouselLite(carousel2Options);
+
+        $slideshows.eq(2).jCarouselLite(carousel3Options);
+      });
+    </script>
+  </head>
+  <body><div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="https://www.jqueryscript.net/slider/seo-friendly-carousel-lite.html">Download This Plugin</a></li>
+<li><a href="https://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul><div id="carbon-block"></div>
+<div class="jquery-script-ads"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2783044520727903"
+     crossorigin="anonymous"></script>
+<!-- jQuery_demo -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-2783044520727903"
+     data-ad-slot="2780937993"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+    <div class="container">
+      <h1>Tiny SEO-Friendly Carousel jQuery Plugin Examples</h1>
+      <p>A lightweight jQuery plugin for creating touch-enabled and SEO-friendly carousels from any elements (like HTML lists or HTML5 selectors). It is easy to install and customizable for your needs in no time.</p>
+      <div class="slideshow">
+        <h2>Example using "Previous"/"Next" navigation:</h2>
+        <ul class="slides">
+          <li class="slide">
+            <div class="img-wrapper">
+              1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+            </div>
+          </li>
+
+          <li class="slide">
+            <div class="img-wrapper">
+              2 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur.
+
+              <a href="#" class="description"><span>Green Roof</span></a>
+            </div>
+          </li>
+
+          <li class="slide">
+            <div class="img-wrapper">
+              3 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum.
+              <span class="description"><span>Zeeland</span></span>
+            </div>
+          </li>
+
+          <li class="slide">
+            <div class="img-wrapper">
+              4 In culpa qui officia deserunt mollit anim id est laborum.
+              <span class="description"><span>CityFlats Hotel</span></span>
+            </div>
+          </li>
+
+          <li class="slide">
+            <div class="img-wrapper">
+              5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+            </div>
+          </li>
+        </ul>
+        <button type="button" class="prev">&lt;</button>
+        <button type="button" class="next">&gt;</button>
+      </div>
+      <p>
+        <button class="pause">Pause</button>
+        <button class="resume">Resume</button>
+      </p>
+      <div class="slideshow">
+        <h2>Example using numbered navigation:</h2>
+        <ul class="slides">
+          <li class="slide">
+            <div class="img-wrapper">
+              1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+            </div>
+          </li>
+
+          <li class="slide">
+            <div class="img-wrapper">
+              2 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur.
+              <a href="#" class="description"><span>GRCC Green Roof</span></a>
+            </div>
+          </li>
+
+          <li class="slide">
+            <div class="img-wrapper">
+              3 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum.
+              <span class="description"><span>Zeeland Natatorium</span></span>
+            </div>
+          </li>
+
+          <li class="slide">
+            <div class="img-wrapper">
+              4 In culpa qui officia deserunt mollit anim id est laborum.
+              <span class="description"><span>CityFlats Hotel</span></span>
+            </div>
+          </li>
+
+          <li class="slide">
+            <div class="img-wrapper">
+              5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+              <span class="description"><span>Calvin College</span></span>
+            </div>
+          </li>
+        </ul>
+        <div class="nav">
+          <button type="button">1</button>
+          <button type="button">2</button>
+          <button type="button">3</button>
+          <button type="button">4</button>
+          <button type="button">5</button>
+        </div>
+      </div>
+
+      <div class="slideshow">
+        <h2>Example using custom HTML5 selectors <code>section</code> and <code>article</code>:</h2>
+        <section class="slides">
+          <article class="slide">
+            <div class="img-wrapper">
+              1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </div>
+          </article>
+
+          <article class="slide">
+            <div class="img-wrapper">
+              2 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+              <a href="#" class="description"><span>GRCC Green Roof</span></a>
+            </div>
+          </article>
+
+          <article class="slide">
+            <div class="img-wrapper">
+              3 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum.
+              <span class="description"><span>Zeeland</span></span>
+            </div>
+          </article>
+
+          <article class="slide">
+            <div class="img-wrapper">
+              4 In culpa qui officia deserunt mollit anim id est laborum.
+              <span class="description"><span>CityFlats Hotel</span></span>
+            </div>
+          </article>
+
+          <article class="slide">
+            <div class="img-wrapper">
+              5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+            </div>
+          </article>
+        </section>
+        <button type="button" class="prev">&lt;</button>
+        <button type="button" class="next">&gt;</button>
+      </div>
+    </div>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1VDDWMRSTH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-1VDDWMRSTH');
+</script>
+<script>
+try {
+  fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+    return true;
+  }).catch(function(e) {
+    var carbonScript = document.createElement("script");
+    carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+    carbonScript.id = "_carbonads_js";
+    document.getElementById("carbon-block").appendChild(carbonScript);
+  });
+} catch (error) {
+  console.log(error);
+}
+</script>
+  </body>
+</html>

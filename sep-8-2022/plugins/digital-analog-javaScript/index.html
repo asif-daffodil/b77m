@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>Digital And Analog Clocks With JavaScript (jQuery) Example</title>
+</head>
+
+<body onload="initClock()">
+  <div class="nav">
+    <h1>Your Time Is Valuable</h1>
+    <div class="btn">
+      <button class="dig" onclick="digital()">Digital clock</button>
+      <button class="analog" onclick="analog()">Analog Clock</button>
+    </div>
+  </div>
+  <div class="clock">
+    <div class="hour">
+      <div class="hor" id="hor">
+
+      </div>
+    </div>
+    <div class="minutes">
+      <div class="mn" id="mn">
+
+      </div>
+    </div>
+    <div class="seconds">
+      <div class="sc" id="sc">
+
+      </div>
+    </div>
+  </div>
+  <div class="datetime">
+    <div class="date">
+      <span id="day">Day</span>,
+      <span id="month">Month</span>
+      <span id="num">00</span>,
+      <span id="year">Year</span>
+    </div>
+    <div class="time">
+      <span id="hour">00</span>:
+      <span id="min">00</span>:
+      <span id="sec">00</span>
+      <span id="period">AM</span>
+    </div>
+  </div>
+  <script src="js/clock.js"></script>
+  <script src="js/digital.js"></script>
+
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plugins</title>
+    <link
+      rel="stylesheet"
+      href="/plugins/ios-web-calculator/style.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./plugins/yBox-main/dist/css/ybox.min.css" />
+    <link
+      rel="stylesheet"
+      href="./plugins/digital-analog-javaScript/css/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./plugins/digital-analog-javaScript/css/mobile.css"
+    />
+    <link rel="stylesheet" href="./plugins/WOW-master/css/libs/animate.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body onload="initClock()">
+    <div class="myCalCss wow slideInLeft" style="margin-bottom: 200px">
+      <h2>Calculator</h2>
+      <div id="calculator"></div>
+    </div>
+
+    <div class="myCalCss wow slideInRight">
+      <h2>Lite Box</h2>
+      <a
+        href="https://www.youtube.com/embed/VwttlZtu69c"
+        class="yBox yBox_iframe"
+      >
+        <img src="./images/vdo.jpg" alt="" class="vdoImg" />
+      </a>
+    </div>
+
+    <div class="myCalCss wow slideInRight">
+      <div class="nav">
+        <h2 class="navh2">Your Time Is Valuable</h2>
+        <div class="btn">
+          <button class="dig cbtn" onclick="digital()">Digital clock</button>
+          <button class="analog cbtn" onclick="analog()">Analog Clock</button>
+        </div>
+      </div>
+      <div class="clock">
+        <div class="hour">
+          <div class="hor" id="hor"></div>
+        </div>
+        <div class="minutes">
+          <div class="mn" id="mn"></div>
+        </div>
+        <div class="seconds">
+          <div class="sc" id="sc"></div>
+        </div>
+      </div>
+      <div class="datetime">
+        <div class="date">
+          <span id="day">Day</span>,
+          <span id="month">Month</span>
+          <span id="num">00</span>,
+          <span id="year">Year</span>
+        </div>
+        <div class="time">
+          <span id="hour">00</span>: <span id="min">00</span>:
+          <span id="sec">00</span>
+          <span id="period">AM</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="myCalCss wow slideInRight">
+      <div class="montainer">
+        <p><a href="../">Instructions</a></p>
+        <div class="slideshow">
+          <ul class="slides">
+            <li class="slide">
+              <div class="img-wrapper">
+                1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur.
+              </div>
+            </li>
+
+            <li class="slide">
+              <div class="img-wrapper">
+                2 Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.
+                <span class="description"><span>Green Roof</span></span>
+              </div>
+            </li>
+
+            <li class="slide">
+              <div class="img-wrapper">
+                3 Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum.
+                <span class="description"><span>Zeeland</span></span>
+              </div>
+            </li>
+
+            <li class="slide">
+              <div class="img-wrapper">
+                4 In culpa qui officia deserunt mollit anim id est laborum.
+                <span class="description"><span>CityFlats Hotel</span></span>
+              </div>
+            </li>
+
+            <li class="slide">
+              <div class="img-wrapper">
+                5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.
+              </div>
+            </li>
+          </ul>
+          <a href="#" class="prev">&lt;</a>
+          <a href="#" class="next">&gt;</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bzoom_wrap wow slideInRight">
+      <ul id="bzoom">
+        <li>
+          <img class="bzoom_thumb_image" src="./images/201-750x1000.jpg" />
+          <img class="bzoom_big_image" src="./images/201-750x1000.jpg" />
+        </li>
+        <li>
+          <img class="bzoom_thumb_image" src="./images/203-750x1000.jpg" />
+          <img class="bzoom_big_image" src="./images/203-750x1000.jpg" />
+        </li>
+        <li>
+          <img class="bzoom_thumb_image" src="./images/212-750x1000.jpg" />
+          <img class="bzoom_big_image" src="./images/212-750x1000.jpg" />
+        </li>
+        <li>
+          <img class="bzoom_thumb_image" src="./images/220-750x1000.jpg" />
+          <img class="bzoom_big_image" src="./images/220-750x1000.jpg" />
+        </li>
+      </ul>
+
+      <div class="halum">
+        <h2>Halum Ali</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius neque
+          mollitia accusamus quae laboriosam at pariatur, culpa ex, omnis
+          excepturi earum dolore necessitatibus voluptatum eos, voluptatibus
+          cupiditate! Facilis architecto error nam quidem saepe maxime
+          laudantium, suscipit mollitia magni quae alias iure labore quibusdam
+          voluptas obcaecati unde laboriosam a. Saepe, totam!
+        </p>
+        <button>But now</button>
+      </div>
+    </div>
+
+    <script src="./js/jquery-3.6.1.min.js"></script>
+
+    <!-- cal script start -->
+    <script src="./plugins/ios-web-calculator/calculation.js"></script>
+    <script src="./plugins/ios-web-calculator/calculator.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-1VDDWMRSTH");
+    </script>
+    <!-- cal script end -->
+
+    <!-- litebox script start -->
+    <script src="./plugins/yBox-main/dist/js/directive.min.js"></script>
+    <script src="./plugins/yBox-main/dist/js/ybox.min.js"></script>
+    <!-- litebox script end -->
+
+    <!-- clock js start -->
+    <script src="./plugins/digital-analog-javaScript/js/clock.js"></script>
+    <script src="./plugins/digital-analog-javaScript/js/digital.js"></script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(["_setAccount", "UA-36251023-1"]);
+      _gaq.push(["_setDomainName", "jqueryscript.net"]);
+      _gaq.push(["_trackPageview"]);
+
+      (function () {
+        var ga = document.createElement("script");
+        ga.type = "text/javascript";
+        ga.async = true;
+        ga.src =
+          ("https:" == document.location.protocol
+            ? "https://ssl"
+            : "http://www") + ".google-analytics.com/ga.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <!-- clock js end -->
+
+    <!-- slider script start -->
+    <script>
+      !window.jQuery &&
+        document.write(
+          unescape(
+            '%3Cscript src="./plugins/seo-friendly-carousel-lite/lib/jquery.js"%3E%3C/script%3E'
+          )
+        );
+    </script>
+    <script src="./plugins/seo-friendly-carousel-lite/lib/ios-orientationchange-fix.js"></script>
+    <script src="./plugins/seo-friendly-carousel-lite/src/jquery.jcarousellite.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        var carouselOptions = {
+          // auto: true,
+          circular: false,
+          autoWidth: true,
+          responsive: true,
+          visible: 2,
+          speed: 300,
+          pause: true,
+          btnPrev: function () {
+            return $(this).find(".prev");
+          },
+          btnNext: function () {
+            return $(this).find(".next");
+          },
+        };
+
+        $("div.slideshow").jCarouselLite(carouselOptions);
+      });
+    </script>
+    <!-- slider script end -->
+
+    <!-- bzoom start -->
+    <script src="./plugins/jQuery-Plugin-For-Product-Viewer-with-Image-Hover-Zoom-BZoom/js/jqzoom.js"></script>
+    <script>
+      $("#bzoom").zoom({
+        zoom_area_width: 300,
+        // MORE OPTIONS HERE
+      });
+    </script>
+    <!-- bzoom end -->
+
+    <!-- wow js start-->
+    <script src="./plugins/WOW-master/dist/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <!-- wow js end-->
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
