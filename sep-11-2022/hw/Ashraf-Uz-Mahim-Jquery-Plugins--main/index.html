@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery Plugins</title>
+    <link rel="icon" href="./imges/jquery_icon.png" />
+    <link rel="stylesheet" href="./WOW-master/css/libs/animate.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://www.jqueryscript.net/css/jquerysctipttop.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./Plugins/text plugins/dist/style.css" />
+    <link rel="stylesheet" href="./Plugins/digital-analog/style.css" />
+    <link
+      rel="stylesheet"
+      href="./Plugins/sticky-expanding-sidebar-nav/css/ss-menu.css"
+    />
+    <link
+      href="https://www.jqueryscript.net/css/jquerysctipttop.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="./Plugins/modern-photo-gallery/style.css"
+      type="text/css"
+    />
+    <link
+      href="https://www.jqueryscript.net/css/jquerysctipttop.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="./Plugins/Product-Carousel-Magnifying-Effect-exzoom/src/jquery.exzoom.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./Css/style.css" />
+  </head>
+  <body>
+    <!-- name span box started here -->
+
+    <div class="container-fluid firstContainer">
+      <!-- navigation bar started here -->
+      <nav class="ss-menu">
+        <ul class="p-0 m-0">
+          <li>
+            <a href="#"><i class="fab fa-js"></i> JavaScript</a>
+          </li>
+          <li>
+            <a href="#"
+              ><span class="ss-badge">6</span>
+              <i class="fab fa-html5"></i> HTML5</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-css3"></i> CSS3</a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-react"></i> React</a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-angular"></i> Angular</a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-vuejs"></i> Vue.js</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-cogs"></i> Settings</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-address-book"></i> Contact</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-sign-in-alt"></i> Sign-in</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- logo text div started here -->
+      <div class="logo-block wow bounceInDown" data-wow-duration="2s">
+        <div class="shadow-text lighter">
+          <span class="l">A</span>
+          <span class="i">S</span>
+          <span class="v">H</span>
+          <span class="e">R</span>
+          <span class="l2">A</span>
+          <span class="y">F</span>
+        </div>
+        <div class="shadow-text bolder">
+          <span class="l">A</span><span class="i">S</span
+          ><span class="v">H</span><span class="e">R</span
+          ><span class="l2">A</span><span class="y">F</span>
+        </div>
+      </div>
+      <div class="shadow-text text">ASHRAF</div>
+    </div>
+
+    <!-- clock div started here -->
+
+    <div class="container-fluid thirdContainer">
+      <div class="clock tm wow fadeInRightBig" data-wow-duration="3s">
+        <div class="hand hour"></div>
+        <div class="hand minute"></div>
+        <div class="hand second"></div>
+        <div class="number number1">1</div>
+        <div class="number number2">2</div>
+        <div class="number number3">3</div>
+        <div class="number number4">4</div>
+        <div class="number number5">5</div>
+        <div class="number number6">6</div>
+        <div class="number number7">7</div>
+        <div class="number number8">8</div>
+        <div class="number number9">9</div>
+        <div class="number number10">10</div>
+        <div class="number number11">11</div>
+        <div class="number number12">12</div>
+      </div>
+      <div class="digital wow flipInY" data-wow-duration="3s">
+        <h1 class="digits hours"></h1>
+        <h1 class="digits">:</h1>
+        <h1 class="digits minutes"></h1>
+        <h1 class="digits">:</h1>
+        <h1 class="digits seconds"></h1>
+      </div>
+      <div id="date" class="wow rollIn" data-wow-duration="3s">
+        <h1 class="date day"></h1>
+        <h1 class="date month"></h1>
+        <h1 class="date year"></h1>
+      </div>
+    </div>
+
+    <!-- live image gallery div started here -->
+
+    <div class="container-fluid bg-black p-5">
+      <div class="row">
+        <div class="gallery">
+          <figure>
+            <img
+              class="gellaryImg"
+              src="https://images.unsplash.com/photo-1448814100339-234df1d4005d?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600"
+              alt=""
+            />
+            <figcaption>Daytona Beach <small>United States</small></figcaption>
+          </figure>
+
+          <figure>
+            <img
+              class="gellaryImg"
+              src="https://images.unsplash.com/photo-1443890923422-7819ed4101c0?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600"
+              alt=""
+            />
+            <figcaption>
+              Териберка, gorod Severomorsk <small>Russia</small>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img
+              class="gellaryImg"
+              src="https://images.unsplash.com/photo-1439798060585-62ab242d7724?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600"
+              alt=""
+            />
+            <figcaption>
+              Yellowstone National Park <small>United States</small>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img
+              class="gellaryImg"
+              src="https://images.unsplash.com/photo-1440339738560-7ea831bf5244?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600"
+              alt=""
+            />
+            <figcaption>
+              Quiraing, Portree <small>United Kingdom</small>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img
+              class="gellaryImg"
+              src="https://images.unsplash.com/photo-1441906363162-903afd0d3d52?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600"
+              alt=""
+            />
+            <figcaption>Highlands <small>United States</small></figcaption>
+          </figure>
+
+          <figure>
+            <img
+              class="gellaryImg"
+              src="https://images.indianexpress.com/2019/05/taj-mahal-amp.jpg"
+              alt=""
+            />
+            <figcaption>Taj Mahal, Agra <small>India</small></figcaption>
+          </figure>
+
+          <figure>
+            <img
+              class="gellaryImg"
+              src="https://images.thrillophilia.com/image/upload/s--48fr2Gab--/c_fill,h_600,q_auto,w_975/f_auto,fl_strip_profile/v1/images/photos/000/239/746/original/1587752090_1576830344_auli1.jpg.jpg.jpg"
+              alt=""
+            />
+            <figcaption>Auli, Uttarakhand <small>India</small></figcaption>
+          </figure>
+
+          <figure>
+            <img
+              class="gellaryImg"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Wild_horses1.jpg/1920px-Wild_horses1.jpg"
+              alt=""
+            />
+            <figcaption>Erciyes Mountain <small>Turkey</small></figcaption>
+          </figure>
+
+          <figure>
+            <img
+              class="gellaryImg"
+              src="http://www.thelandofsnows.com/wp-content/uploads/2015/03/Ladakh-Pangong-Lake-1024x618.jpg"
+              alt=""
+            />
+            <figcaption>Pangong Tso, Leh <small>India</small></figcaption>
+          </figure>
+
+          <figure>
+            <img
+              class="gellaryImg"
+              src="https://images.unsplash.com/photo-1606373664971-bf9b25eb508d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3171&q=80"
+              alt=""
+            />
+            <figcaption>Boston, MA <small>United States</small></figcaption>
+          </figure>
+
+          <figure>
+            <img
+              class="gellaryImg"
+              src="https://www.ootlah.com/wp-content/uploads/2021/04/shu-hero-778448884-1440x823-1.jpg"
+              alt=""
+            />
+            <figcaption>Marrakesh <small>Morocco</small></figcaption>
+          </figure>
+
+          <figure>
+            <img
+              class="gellaryImg"
+              src="https://c0.wallpaperflare.com/preview/682/317/188/india-mussoorie-landour-cloudscape.jpg"
+              alt=""
+            />
+            <figcaption>Mussoorie, Uttarakhand <small>India</small></figcaption>
+          </figure>
+
+          <!--        Copy the figure tags along with the content and paste it above this comment.
+                             Replace the link in the src attribute with the image link.
+                             Also change the content in figcaption and small tags according to the location
+                 -->
+        </div>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          style="display: none"
+        >
+          <symbol id="close" viewBox="0 0 18 18">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              fill="#FFFFFF"
+              d="M9,0.493C4.302,0.493,0.493,4.302,0.493,9S4.302,17.507,9,17.507
+                            S17.507,13.698,17.507,9S13.698,0.493,9,0.493z M12.491,11.491c0.292,0.296,0.292,0.773,0,1.068c-0.293,0.295-0.767,0.295-1.059,0
+                            l-2.435-2.457L6.564,12.56c-0.292,0.295-0.766,0.295-1.058,0c-0.292-0.295-0.292-0.772,0-1.068L7.94,9.035L5.435,6.507
+                            c-0.292-0.295-0.292-0.773,0-1.068c0.293-0.295,0.766-0.295,1.059,0l2.504,2.528l2.505-2.528c0.292-0.295,0.767-0.295,1.059,0
+                            s0.292,0.773,0,1.068l-2.505,2.528L12.491,11.491z"
+            />
+          </symbol>
+        </svg>
+      </div>
+    </div>
+
+    <!-- zoom product div started here -->
+
+    <div class="container-fluid col-12 mx-auto p-5 bg-black fivthContainer">
+      <div
+        class="exzoom hidden mx-3 wow fadeInRightBig"
+        data-wow-duration="2s"
+        id="exzoom"
+      >
+        <div class="exzoom_img_box">
+          <ul class="exzoom_img_ul">
+            <li><img src="./imges/image (1).jpg" /></li>
+            <li><img src="./imges/image (2).jpg" /></li>
+            <li><img src="./imges/image (3).jpg" /></li>
+            <li><img src="./imges/image (4).jpg" /></li>
+            <li><img src="./imges/image (5).jpg" /></li>
+            <li><img src="./imges/image (6).jpg" /></li>
+            <li><img src="./imges/image (7).jpg" /></li>
+            <li><img src="./imges/image (8).jpg" /></li>
+          </ul>
+        </div>
+        <div class="exzoom_nav"></div>
+        <p class="exzoom_btn">
+          <a href="javascript:void(0);" class="exzoom_prev_btn"> < </a>
+          <a href="javascript:void(0);" class="exzoom_next_btn"> > </a>
+        </p>
+      </div>
+      <div>
+        <p class="pragraph wow fadeInUp" data-wow-duration="5s">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+          qui, suscipit, optio dolor adipisci placeat necessitatibus impedit
+          consectetur quidem iusto accusamus nisi obcaecati distinctio, repellat
+          cumque expedita unde dignissimos recusandae natus! Dolorem, facere rem
+          minima accusantium dolore labore eos. Nulla iusto deserunt laudantium
+          recusandae itaque corrupti laboriosam voluptates neque perferendis.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        </p>
+      </div>
+    </div>
+
+    <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<    js link    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+    <script src="./Js/jquery-3.6.1.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Js/script.js"></script>
+    <script src="./Plugins/text plugins/dist/script.js"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-1VDDWMRSTH"
+    ></script>
+
+    <!-- clock js link -->
+    <script src="./Plugins/digital-analog/Index.js" charset="utf-8"></script>
+
+    <!-- navbar js link -->
+    <script src="./Plugins/sticky-expanding-sidebar-nav/js/jquery.ss.menu.js"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-1VDDWMRSTH"
+    ></script>
+
+    <!-- gallery image js link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./Plugins/modern-photo-gallery/script.js"></script>
+
+    <!-- zoom product js link -->
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="./Plugins/Product-Carousel-Magnifying-Effect-exzoom/src/jquery.exzoom.js"></script>
+    <script>
+      $(".container").imagesLoaded(function () {
+        $("#exzoom").exzoom({
+          autoPlay: false,
+        });
+        $("#exzoom").removeClass("hidden");
+      });
+    </script>
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(["_setAccount", "UA-36251023-1"]);
+      _gaq.push(["_setDomainName", "jqueryscript.net"]);
+      _gaq.push(["_trackPageview"]);
+
+      (function () {
+        var ga = document.createElement("script");
+        ga.type = "text/javascript";
+        ga.async = true;
+        ga.src =
+          ("https:" == document.location.protocol
+            ? "https://ssl"
+            : "http://www") + ".google-analytics.com/ga.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+    <!-- wow js linked  -->
+
+    <script src="./WOW-master/dist/wow.min.js"></script>
+    <script>
+      wow = new WOW({
+        boxClass: "wow", // default
+        animateClass: "animated", // default
+        offset: 0, // default
+        mobile: true, // default
+        live: true, // default
+      });
+      wow.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,159 @@
+/*!  Plugin: ssMenu (Sticky Side Navigation)
+ *   Author: Asif Mughal
+ *   URL: www.codehim.com
+ *   License: MIT License
+ *   Copyright (c) 2019 - Asif Mughal
+ */
+/* File: ss.emenu.js */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.ss-menu {
+  font-style: normal;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  /* for zombiles browsers*/
+}
+
+.ss-menu.open {
+  width: 290px;
+}
+
+.ss-menu.hide {
+  left: -60px;
+}
+
+.ss-menu.show {
+  left: 0;
+}
+
+/* ssMenu Default Theme */
+
+.ss-menu.default {
+  background: #00030e88;
+}
+
+.ss-menu.default ul li:hover {
+  background: #28c728;
+}
+
+.ss-menu.default ul li a {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.ss-menu ul li:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.ss-menu.default ul li i {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.ss-menu ul li {
+  white-space: nowrap;
+  border-radius: 0 30px 30px 0;
+  margin: 0 10px 0 0;
+  overflow: hidden;
+}
+
+.ss-menu ul li a {
+  color: #ffffff;
+  /* For older browsers */
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  padding: 15px 10px;
+  display: block;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.05);
+  font-size: 14px;
+  transform-origin: center;
+}
+
+.ss-menu ul li a:hover {
+  text-indent: 4px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.ss-menu ul li i {
+  margin: 0 6px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 22px;
+}
+
+.ss-menu ul li:hover i {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.ss-main {
+  margin-left: 50px;
+}
+
+/*Transitions For Specific Items */
+
+.ss-menu,
+.ss-menu.open,
+.ss-menu ul li,
+.ss-menu ul li a,
+.ss-menu ul li:hover,
+.ss-menu ul li a:hover {
+  transition: 0.3s all;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+}
+
+/* ssMenu Badge Design */
+
+.ss-badge {
+  width: 16px;
+  height: 16px;
+  background: #e41b17;
+  color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 12px;
+  text-align: center;
+  position: absolute;
+}
+
+/* Themes For ssMenu */
+
+.red {
+  background: #e00032;
+}
+
+.yellow {
+  background: #fdd835;
+}
+
+.green {
+  background: #0a8f08;
+}
+
+.blue {
+  background: #4d73ff;
+}
+
+.orange {
+  background: #ff3d00;
+}
+
+.brown {
+  background: #6d4c41;
+}
+
+.teal {
+  background: #00897b;
+}
+
+.purple {
+  background: #9c27b0;
+}

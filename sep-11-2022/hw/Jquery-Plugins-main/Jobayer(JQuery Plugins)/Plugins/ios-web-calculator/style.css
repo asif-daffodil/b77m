@@ -1,0 +1,146 @@
+#calculator {
+  min-height: 500px;
+  max-height: 550px;
+  min-width: 450px;
+  max-width: 500px;
+  border: 5px solid #ffffff;
+  border-radius: 20px;
+  height: auto;
+  background-color: #ccc;
+  box-shadow: 5px 10px 20px 10px rgb(29, 25, 25);
+  display: grid;
+  grid-template: "s s s s" 1fr
+                 "a a a o" 1fr
+                 "n n n o" 1fr
+                 "n n n o" 1fr
+                 "n n n o" 1fr
+                 "n n n o" 1fr
+                 / 1fr 1fr 1fr 1fr;
+}
+
+/*============================
+  CALCULATOR SCREEN
+============================*/
+.screen {
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  grid-area: s;
+  background-color: #1A1A1D;
+  border-radius: 20px;
+  border: 2px solid #C3073F;
+}
+
+.screen p {
+  display: inline-block;
+  color: white;
+  text-align: right;
+  width: 100%;
+  height: 100%;
+  font-size: 2.4rem;
+  user-select: none;
+}
+/*============================
+  CALCULATOR BUTTONS
+============================*/
+button {
+  border-radius: 50% !important;
+  width: 70px;
+  height: 70px;
+  outline: none;
+  color: white;
+  user-select: none;
+  border: 1px transparent solid;
+  transition: all 0.3s ease;
+  font-size: 30px;
+}
+
+/*=== BUTTON CONTAINERS===*/
+.container {
+  justify-items: center;
+  grid-gap: 5px;
+  padding: 5px 0;
+}
+
+.aux {
+  grid-area: a;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 0;
+}
+
+.operators {
+  grid-area: o;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  padding-right: 5px;
+}
+
+.numbers {
+  grid-area: n;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+/*=== AUXILLARY BUTTONS===*/
+
+.auxillary {
+  background-color: #9f9fa1;
+  color: black;
+}
+
+.auxillary:active {
+  background-color: #d3d3d4;
+}
+/*=== OPERATOR BUTTONS===*/
+.operator {
+  background-color: #C3073F;
+}
+
+.operator:active {
+  background-color:#a03152;
+  color: white;
+}
+
+.op-clicked {
+  background-color: white;
+  font-size: 30px;
+  color: #C3073F;
+}
+
+#division {
+  font-size: 35px !important;
+}
+
+#addition{
+  font-size: 30px !important;
+}
+
+#subtraction {
+  font-size: 35px !important;
+}
+
+#equals{
+  font-size: 30px;
+}
+
+#multiplication{
+  font-size: 27px !important;
+}
+/*=== NUMBER BUTTONS===*/
+.numbers button {
+  background-color: #4E4E50;
+}
+
+.numbers button:active {
+  background-color:  #a09e9e;
+  color: black;
+}
+
+#zero {
+  grid-column: span 2;
+  border-radius: 40px 40px;
+  min-width: 190px;
+  text-align: left;
+  text-indent: 15%;
+}

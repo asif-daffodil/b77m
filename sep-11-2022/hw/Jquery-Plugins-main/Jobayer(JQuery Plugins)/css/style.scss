@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #204491;
+
+    .myClassCss{
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        >a{
+            .vdoimg{
+                width: 470px;
+                height: 300px;
+                border: 5px solid red;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .ghori{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+

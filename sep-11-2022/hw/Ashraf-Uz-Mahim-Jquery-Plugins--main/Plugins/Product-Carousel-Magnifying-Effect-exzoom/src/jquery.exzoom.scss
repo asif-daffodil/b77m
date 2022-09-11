@@ -1,0 +1,130 @@
+@charset "utf-8";
+$bg_color: #eee;
+$border_color: #ddd;
+$high_light_color: #66ff66;
+$btn_width: 15px;
+$btn_height: 60px;
+.exzoom {
+  box-sizing: border-box;
+  .exzoom_img_box {
+    background: $bg_color;
+    position: relative;
+    .exzoom_main_img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .exzoom_preview {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    z-index: 999;
+    background-color: #000;
+    border: 1px solid $border_color;
+    display: none;
+    .exzoom_preview_img {
+      position: relative;
+      max-width: initial !important; //这两项不设置会造成图片变形,特别是宽度
+      max-height: initial !important;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  .exzoom_nav {
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    left: $btn_width;
+    .exzoom_nav_inner {
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin: 0;
+      span {
+        border: 1px solid $border_color;
+        overflow: hidden;
+        position: relative;
+        float: left;
+        &.current {
+          border: 1px solid $high_light_color;
+        }
+
+        img {
+          max-width: 100%;
+          max-height: 100%;
+          position: relative;
+        }
+      }
+    }
+  }
+  .exzoom_btn {
+    position: relative;
+    margin: 0;
+    a {
+      display: block;
+      width: $btn_width;
+      border: 1px solid $border_color;
+      height: $btn_height;
+      line-height: $btn_height;
+      background: $bg_color;
+      text-align: center;
+      font-size: 18px;
+      position: absolute;
+      left: 0;
+      top: -62px;
+      text-decoration: none;
+      color: #999;
+    }
+
+    a:hover {
+      background: $high_light_color;
+      color: #fff;
+    }
+
+    a.exzoom_next_btn {
+      left: auto;
+      right: 0;
+    }
+  }
+
+  .exzoom_zoom {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 5;
+    cursor: zoom-in;
+  }
+
+  @media screen and (max-width: 768px) {
+    .exzoom_zoom_outer {
+      display: none;
+    }
+  }
+
+  .exzoom_img_ul_outer {
+    //这个元素需要用 js 指定 宽度和高度
+    border: 1px solid $border_color;
+    position: absolute;
+    overflow: hidden;
+
+    .exzoom_img_ul {
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+      position: absolute;
+      li {
+        list-style: none;
+        display: inline-block;
+        text-align: center;
+        float: left;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.parent {
+  width: 100%;
+  margin: auto;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px;
+  font-size: 24px;
+}

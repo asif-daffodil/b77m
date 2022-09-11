@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section class="section_one">
+        <div class="bg">
+        </div>
+        <div>
+            <h1>Hello Sir!</h1>
+            <p>Using 5 jquery plugins in a single website, To see, just Scroll Down!!</p>
+            
+        </div>
+    </section>
+    <section>
+        <div class="bg"></div>
+        <div>
+            <h3 data-aos="fade-up" data-aos-duration="1000">We are using those jQuery Plugins below</h3>
+            <ol data-aos="fade-up" data-aos-duration="1000">
+                <li> Parallaxie </li>
+                <li> AOS <span>(Scroll Animation)</span></li>
+                <li> Scroll Up </li>
+                <li> Visual Countdown Timer</li>
+                <li> In-Place Zoom </li>
+            </ol>
+        </div>
+    </section>
+    <section>
+        <div class="bg"></div>
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Visual Countdown Timer Examples</h1>
+            <p>A small jQuery countdown script to create a countdown timer and loading bar representing the time left
+                until your
+                next event.</p>
+            <!-- Countdown timer html -->
+            <div class="countdown-bar" id="countdownA" data-aos="fade-up" data-aos-duration="1000">
+                <div></div>
+                <div></div>
+            </div>
+
+            <!-- Countdown timer html -->
+            <div class="countdown-bar" id="countdownB" data-aos="fade-up" data-aos-duration="1000">
+                <div></div>
+                <div></div>
+            </div>
+
+            <!-- Countdown timer html -->
+            <div class="countdown-bar" id="countdownC" data-aos="fade-up" data-aos-duration="1000">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="bg"></div>
+        <div>
+            <h2 data-aos="fade-up" data-aos-duration="1000">In-Place Zoom Picture</h2>
+            <div class="container" data-aos="fade-up" data-aos-duration="1000">
+                <div class="row">
+                    <div class="pic-container">
+                        <div class="parent">
+                            <div class="wrapper thumb-1">
+                                <div class="content">
+                                    <div class="img"></div>
+                                    <div class="text">
+                                        <div class="line title">Dhaka</div>
+                                        <div class="line subtitle">Dhaka is the capital city of Bangladesh</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic-container">
+                        <div class="parent">
+                            <div class="wrapper thumb-2">
+                                <div class="content">
+                                    <div class="img"></div>
+                                    <div class="text">
+                                        <div class="line title">Beijing</div>
+                                        <div class="line subtitle">Beijing, China’s sprawling capital. </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic-container">
+                        <div class="parent">
+                            <div class="wrapper thumb-3">
+                                <div class="content">
+                                    <div class="img"></div>
+                                    <div class="text">
+                                        <div class="line title">Doha</div>
+                                        <div class="line subtitle">Doha, Arabic Al-Dawḥah, city, capital of Qatar.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/parallaxie.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/jquery.scrollUp.min.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        $('.bg').parallaxie({
+            speed: 0.5
+        });
+    </script>
+    <script>
+        try {
+            fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function (response) {
+                return true;
+            }).catch(function (e) {
+                var carbonScript = document.createElement("script");
+                carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+                carbonScript.id = "_carbonads_js";
+                document.getElementById("carbon-block").appendChild(carbonScript);
+            });
+        } catch (error) {
+            console.log(error);
+        }
+    </script>
+    <script>
+        $(function () {
+            $.scrollUp({
+                scrollName: 'scrollUp',      // Element ID
+                scrollDistance: 200,         // Distance from top/bottom before showing element (px)
+                scrollFrom: 'top',           // 'top' or 'bottom'
+                scrollSpeed: 300,            // Speed back to top (ms)
+                easingType: 'linear',        // Scroll to top easing (see http://easings.net/)
+                animation: 'fade',           // Fade, slide, none
+                animationSpeed: 200,         // Animation speed (ms)
+                scrollTrigger: false,        // Set a custom triggering element. Can be an HTML string or jQuery object
+                scrollTarget: false,         // Set a custom target element for scrolling to. Can be element or number
+                scrollText: 'Scroll to top', // Text for element, can contain HTML
+                scrollTitle: false,          // Set a custom <a> title if required.
+                scrollImg: false,            // Set true to use image
+                activeOverlay: false,        // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+                zIndex: 2147483647           // Z-Index for the overlay
+            });
+        });
+    </script>
+    <!-- Run Countdown Timer Script -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            countdown('countdownA', 0, 1, 0, 15);
+
+            countdown('countdownB', 0, 0, 1, 00);
+
+            countdown('countdownC', 0, 0, 0, 10);
+        });
+    </script>
+    <!-- End script -->
+    <script>
+        try {
+            fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function (response) {
+                return true;
+            }).catch(function (e) {
+                var carbonScript = document.createElement("script");
+                carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+                carbonScript.id = "_carbonads_js";
+                document.getElementById("carbon-block").appendChild(carbonScript);
+            });
+        } catch (error) {
+            console.log(error);
+        }
+    </script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</body>
+
+</html>

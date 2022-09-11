@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  margin: 40px auto;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#slideh1 {
+  text-align: center;
+  margin-top: 80px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: DarkSalmon;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

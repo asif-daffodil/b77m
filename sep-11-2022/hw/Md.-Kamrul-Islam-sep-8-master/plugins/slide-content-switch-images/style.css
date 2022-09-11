@@ -1,0 +1,117 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Inter:300,400,500,700,900&display=swap');
+
+/* FontAwesome CDN 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #222;
+    margin: 0;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+/* Layout */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section article {
+    width: 960px;
+    height: 500px;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading span {
+    color: crimson;
+    font-size: 24px;
+}
+
+.heading h1 {
+    font-size: 36px;
+    margin-top: 10px;
+}
+
+
+
+.content {}
+
+.content>div {
+    width: 50%;
+    float: left;
+    height: 400px;
+    box-sizing: border-box;
+}
+
+.accordion {}
+
+.title {
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    padding-left: 15px;
+    /* position: relative; */
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+.title:after {
+    content: '\f105';
+    font-family: fontawesome;
+    /* position: absolute;
+    right: 10px;
+    top: 7px; */
+    float: right;
+    margin-right: 5px;
+    margin-top: 3px;
+    transition: 0.3s;
+}
+
+.title.active:after {
+    transform: rotate(90deg);
+    color: orange;
+}
+
+.title:hover,
+.title.active {
+    background-color: #203049;
+    color: #fff;
+}
+
+.desc {
+    padding: 15px;
+    display: none;
+}
+
+.desc.active {
+    display: block;
+}
+
+.image {
+    text-align: right
+}
+
+.image img {
+    height: 370px;
+}

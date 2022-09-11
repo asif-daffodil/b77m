@@ -1,0 +1,27 @@
+.fivthContainer {
+  min-height: -webkit-max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
+  display: flex;
+}
+.fivthContainer > #exzoom {
+  width: 400px;
+  /*height: 400px;*/
+}
+
+.container {
+  margin: 150px auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.pragraph {
+  color: #66ff66;
+  font-weight: 500;
+  font-size: 22px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-variant: small-caps;
+  text-align: justify;
+}/*# sourceMappingURL=style.css.map */

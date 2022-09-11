@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #d8e7e3; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #77807d; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+h1,
+h2 {
+  font-size: 3rem;
+}
+h3{
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  > div {
+    &:first-child {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 20vh;
+      background: url("../img/bg_1.webp");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+    &:last-child {
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &:nth-child(1) {
+    h1 {
+      margin-bottom: 0.2em;
+    }
+    ol {
+      margin-top: 3em;
+      span {
+        color: rgb(143, 143, 143);
+      }
+    }
+  }
+  &:nth-child(3) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+        >p{
+            margin-bottom: 4em;
+        }
+
+
+      div.countdown-bar {
+        width: 0;
+        height: 20px;
+        margin-bottom: 3em;
+        border: 1px solid #1e90ff;
+        background-color: #e0e0e0c9;
+        div{
+            &:last-child{
+                margin-block: 0.5em;
+            }
+        }
+      }
+
+      /* Loader */
+      div.countdown-bar div:nth-of-type(1) {
+        width: 0;
+        height: 100%;
+      }
+
+      /* Timer */
+      div.countdown-bar div:nth-of-type(2) {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 7em;
+    }
+
+    .pic-container {
+      float: left;
+    }
+
+    .parent {
+      position: relative;
+      width: 309px;
+      height: 109px;
+      margin: 0 auto;
+    }
+
+    .wrapper {
+      width: 109px;
+      height: 109px;
+      cursor: pointer;
+      position: absolute;
+      overflow: hidden;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition: transform 375ms, width 275ms 100ms, height 375ms;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      .img {
+        height: 180px;
+        background-size: cover;
+        background-position: center;
+      }
+      div.content {
+        position: absolute;
+        margin: auto;
+        left: -9999px;
+        right: -9999px;
+        transform-origin: top;
+        width: 330px;
+        transform: scale(0.62);
+        height: 330px;
+        border-radius: 3px;
+        background: #fff;
+        overflow: hidden;
+        transition: transform 375ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+
+    .wrapper.open {
+      width: 330px;
+      height: 330px;
+      translate: transform 375ms, width 375ms, height 275ms 100ms;
+      .content {
+        transform: scale(1);
+      }
+    }
+
+    .thumb-1 .img {
+      background-image: url("../img/dhaka.jpg");
+    }
+
+    .thumb-2 .img {
+      background-image: url("../img/beijing.jpeg");
+    }
+
+    .thumb-3 .img {
+      background-image: url("../img/qataq.jpg");
+    }
+
+    .text {
+      padding: 30px;
+    }
+
+    .title {
+      width: 80%;
+      font-weight: 800;
+      font-size: 1.3rem;
+    }
+
+    .subtitle {
+      width: 80%;
+    }
+  }
+}
+
+#scrollUp {
+  background-image: url("../img/top.png");
+  bottom: 20px;
+  right: 20px;
+  width: 38px; /* Width of image */
+  height: 38px; /* Height of image */
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}

@@ -1,0 +1,46 @@
+.loading {
+  position: fixed;
+  inset: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+.loading span {
+  font-family: "Rajdhani-Bold", sans-serif !important;
+}
+.loading .text-nav {
+  /* transform: translate(39px , -50px); */
+  animation: translate-text 1s 1s both;
+  color: red;
+}
+.loading .text-nav .text-a {
+  animation: hide-text 0.5s 1s both;
+}
+.loading .text-animation {
+  color: blue;
+}
+
+.loading .text-animation .text-n {
+  animation: hide-text 0.5s 1s both;
+}
+
+@keyframes hide-text {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes translate-text {
+  0% {
+    transform: translate(39px, -50px);
+  }
+  100% {
+    transform: translate(39px, 0px);
+  }
+}
